@@ -6,6 +6,7 @@ import { CiCirclePlus } from "react-icons/ci";
 import Table from '../components/Table';
 import { IoSearchSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { FaCircleCheck } from "react-icons/fa6";
 
 
 
@@ -166,65 +167,78 @@ const Products = () => {
 
 {/* ------------------------------------- */}
 
-                    <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
+<div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
 
-                      <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Category<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
-                          <input
-                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="text"
-                          ></input>
-                        </div>
-                      </div>
+<div>
+  <label htmlFor="" className="text-base font-medium text-gray">
+    {' '}
+    Category<span className='text-success px-1'>*</span>
+  </label>
+  <div className="mt-2">
+<select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+<option selected className='text-gray-400 '>--</option>
+<option value="US">United States</option>
+<option value="CA">Canada</option>
+<option value="FR">France</option>
+<option value="DE">Germany</option>
+</select>
 
-                      <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Brand<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
-                          <input
-                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="text"
-                          ></input>
-                        </div>
-                      </div>
+  </div>
+</div>
 
-
-                      <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Barcode<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
-                          <input
-                            className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="text"
-                          ></input>
-                        </div>
-                      </div>
+<div>
+  <label htmlFor="" className="text-base font-medium text-gray">
+    {' '}
+    Brand<span className='text-success px-1'>*</span>
+  </label>
+  <div className="mt-2">
+  <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+<option selected className='text-gray-400 '>--</option>
+<option value="US">United States</option>
+<option value="CA">Canada</option>
+<option value="FR">France</option>
+<option value="DE">Germany</option>
+</select>
+  </div>
+</div>
 
 
-                      <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Tax<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
-                          <input
-                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="text"
-                          ></input>
-                        </div>
-                      </div>
+<div>
+  <label htmlFor="" className="text-base font-medium text-gray">
+    {' '}
+    Barcode<span className='text-success px-1'>*</span>
+  </label>
+  <div className="mt-2">
+  <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+<option selected className='text-gray-400 '>--</option>
+<option value="US">United States</option>
+<option value="CA">Canada</option>
+<option value="FR">France</option>
+<option value="DE">Germany</option>
+</select>
+  </div>
+</div>
+
+
+<div>
+  <label htmlFor="" className="text-base font-medium text-gray">
+    {' '}
+    Tax<span className='text-success px-1'>*</span>
+  </label>
+  <div className="mt-2">
+  <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+<option selected className='text-gray-400 '>--</option>
+<option value="US">United States</option>
+<option value="CA">Canada</option>
+<option value="FR">France</option>
+<option value="DE">Germany</option>
+</select>
+  </div>
+</div>
 
 
 
-                    </div>
+</div>
 
 {/* ----------------------------------------- */}
 
@@ -236,10 +250,13 @@ const Products = () => {
     Unit<span className='text-success px-1'>*</span>
   </label>
   <div className="mt-2">
-    <input
-      className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-      type="text"
-    ></input>
+  <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                      <option selected className='text-gray-400 '>--</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
   </div>
 </div>
 
@@ -249,10 +266,13 @@ const Products = () => {
     Status<span className='text-success px-1'>*</span>
   </label>
   <div className="mt-2">
-    <input
-      className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-      type="text"
-    ></input>
+  <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                      <option selected className='text-gray-400 '>--</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
   </div>
 </div>
 
@@ -263,10 +283,13 @@ const Products = () => {
     Purchasable<span className='text-success px-1'>*</span>
   </label>
   <div className="mt-2">
-    <input
-      className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-      type="text"
-    ></input>
+  <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                      <option selected className='text-gray-400 '>--</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
   </div>
 </div>
 
@@ -277,10 +300,13 @@ const Products = () => {
     Show Stock Out<span className='text-success px-1'>*</span>
   </label>
   <div className="mt-2">
-    <input
-      className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-      type="text"
-    ></input>
+  <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                      <option selected className='text-gray-400 '>--</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
   </div>
 </div>
 
@@ -299,10 +325,13 @@ const Products = () => {
     Refundable<span className='text-success px-1'>*</span>
   </label>
   <div className="mt-2">
-    <input
-      className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-      type="text"
-    ></input>
+  <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                      <option selected className='text-gray-400 '>--</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
   </div>
 </div>
 
@@ -317,9 +346,9 @@ const Products = () => {
 <div className="p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4 md:w-fit w-full space-y-3 md:space-y-0  me-auto">
 
 <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
-  <IoSearchSharp className=' ' />
+  <FaCircleCheck  className=' ' />
   <button type="button" >
-    Search
+  Save
   </button>
 </div>
 

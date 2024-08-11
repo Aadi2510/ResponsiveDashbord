@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { IoSearchSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-
+import { FaCircleCheck } from "react-icons/fa6";
 
 
 const EditProducts = () => {
@@ -302,9 +302,9 @@ const EditProducts = () => {
                                             <div className="p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4 md:w-fit w-full space-y-3 md:space-y-0  me-auto">
 
                                                 <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
-                                                    <IoSearchSharp className=' ' />
+                                                    <FaCircleCheck className=' ' />
                                                     <button type="submit" >
-                                                        Search
+                                                        Save
                                                     </button>
                                                 </div>
 

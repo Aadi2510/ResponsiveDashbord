@@ -9,10 +9,11 @@ import { MdOutlineCalendarMonth } from "react-icons/md";
 import Calendar from '../components/Calendar';
 import PurchasesTable from '../components/PurchasesTable';
 import { FaCircleCheck } from "react-icons/fa6";
+import StockTable from '../components/StockTable';
 
 
 
-const Purchases = () => {
+const Stock = () => {
 
   const [calender, Setcalender] = useState(false)
   const MytoggleMenu = () => {
@@ -32,7 +33,7 @@ const Purchases = () => {
         <div className="  text-neutral-600 mx-auto text-md antialiased font-normal  p-5   ">
 
           <div className=" p-2 relative top-5 my-5 mt-5 antialiased">
-            <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'>Purchases</span></div>
+            <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'>Stock</span></div>
           </div>
           {/* ----------Start---------- */}
 
@@ -45,7 +46,7 @@ const Purchases = () => {
 
                 <div className="md:flex  w-full justify-between ">
 
-                  <div className="p-2 text-xl font-semibold">Purchases</div>
+                  <div className="p-2 text-xl font-semibold">Stock</div>
 
                   <div className="md:flex md:space-y-0 space-y-2 mx-auto md:mx-0  gap-4 ">
 
@@ -111,41 +112,12 @@ const Purchases = () => {
 
                     <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
 
-                    <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Supplier<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
- <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                      <option selected className='text-gray-400 '>--</option>
-                      <option value="US">United States</option>
-                      <option value="CA">Canada</option>
-                      <option value="FR">France</option>
-                      <option value="DE">Germany</option>
-                    </select>
 
-                        </div>
-                      </div>
-
-                      <div>
-                  <label htmlFor="" className="font-medium text-graydark">
-                    {' '}
-                    Date{' '}
-                  </label>
-                  <div className="mt-2">
-                          <input
-                            className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="date"
-                          ></input>
-                        </div>
-
-                </div>
 
                       <div>
                         <label htmlFor="" className="text-base font-medium text-gray">
                           {' '}
-                          Reference No<span className='text-success px-1'>*</span>
+                          Name<span className='text-success px-1'>*</span>
                         </label>
                         <div className="mt-2">
                           <input
@@ -176,43 +148,6 @@ const Purchases = () => {
 
                     </div>
 
-{/* ------------------------------------- */}
-
-                    <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
-
-                    <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Total<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
-                          <input
-                            className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="text"
-                          ></input>
-                        </div>
-                      </div>
-
-
-
-                      <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Note<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
-                          <input
-                            className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="text"
-                          ></input>
-                        </div>
-                      </div>
-
-
-
-
-
-                    </div>
 
 {/* ------------------------End--------------------------------- */}
 
@@ -224,7 +159,7 @@ const Purchases = () => {
 <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
   <FaCircleCheck className=' ' />
   <button type="button" >
-    Search
+    Save
   </button>
 </div>
 
@@ -252,7 +187,7 @@ x
 
                 <div className="w-full">
 
-<PurchasesTable/>
+<StockTable/>
 
                 </div>
               </div>
@@ -278,4 +213,4 @@ x
   )
 }
 
-export default Purchases
+export default Stock

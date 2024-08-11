@@ -2,10 +2,12 @@
 import React, { useState } from 'react'
 import { IoSearchSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-
-
+import pro from '../images/Navbar/profile.webp'
+import { FaCircleCheck } from "react-icons/fa6";
 
 const ViewProducts = () => {
+
+
 
     return (
         <>
@@ -20,8 +22,7 @@ const ViewProducts = () => {
                         </div>
                     </div>
 
-                    {/* ----------Start Form---------*/}
-                    <form action="" method="post">
+                    {/* ----------Start View---------*/}
 
                         <div className=" ">
 
@@ -45,32 +46,58 @@ const ViewProducts = () => {
                                 {/* ---------------------------------------------------- */}
 
 
-                                {/* -----------From-------------------- */}
+                                {/* ------------------------------- */}
+                                <div className="p-3 grid md:grid-cols-2 sm:grid-cols-1 md:gap-5 xl:grid-cols-2 w-fit ms-auto space-y-3 md:space-y-0  ">
+
+<div className="px-3  flex justify-around w-fit gap-2 ms-auto items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
+    <FaCircleCheck  className=' ' />
+    <button type="submit" >
+        Save
+    </button>
+</div>
+
+<div className="px-3  flex justify-around w-fit gap-2 ms-auto items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
+    <FaCircleCheck  className=' ' />
+    <button type="submit" >
+        Save
+    </button>
+</div>
+
+</div>
+
+
+
+ 
+
 
                                 <div className="flex  justify-between  my-1 p-1  ">
 
-                                    <div className="mt-[2rem]  text-justify grid mx-auto w-full  gird-rows-auto gap-2 md:mt-0 border shadow-md md:p-2 bg-white rounded-md antialiased">
-
-<div className=''><span>Name: </span>Name</div>
-<hr /><div><span>SKU: </span>SKU</div>
-<hr /><div><span>Buying Price:</span>Buying Price</div>
-<hr /><div><span>Selling Price: </span>Selling Price</div>
-<hr /><div><span>Category: </span>Category</div>
-<hr /><div><span>Brand: </span>Brand</div>
-<hr /><div><span>Barcode: </span>Barcode</div>
-<hr /><div><span>Tax: </span>Tax</div>
-<hr /><div><span>Unit: </span>Unit</div>
-<hr /><div><span>Status: </span>Status</div>
-<hr /><div><span>Can Purchasable: </span>Can Purchasable</div>
-<hr /><div><span>Show Stock Out: </span>Show Stock Out</div>
-<hr /><div><span>Refundable: </span>Refundable</div>
-<hr /><div><span>Description: </span>Description</div>
+                                    <div className="mt-[2rem]  text-justify grid md:grid-cols-2 md:gap-2 space-y-3 xl:grid-cols-3   w-full  gird-rows-auto gap-2 md:mt-0 border shadow-md md:p-5 bg-white rounded-md antialiased">
 
 
+<div className=''><span>Image: </span>
+<div className="mt-1"><img src={pro} alt="image" srcset="" className='border w-24 h-24 p-2 rounded'/></div>
+</div>
+<div><span>Name: </span>Name</div>
+<div><span>SKU: </span>SKU</div>
+<div><span>Buying Price:</span>Buying Price</div>
+<div><span>Selling Price: </span>Selling Price</div>
+<div><span>Category: </span>Category</div>
+<div><span>Brand: </span>Brand</div>
+<div><span>Barcode: </span>Barcode</div>
+<div><span>Tax: </span>Tax</div>
+<div><span>Unit: </span>Unit</div>
+<div><span>Status: </span>Status</div>
+<div><span>Can Purchasable: </span>Can Purchasable</div>
+<div><span>Show Stock Out: </span>Show Stock Out</div>
+<div><span>Refundable: </span>Refundable</div>
+<div><span>Description: </span>Description</div>
+</div>
 
 
 
-                                    </div>
+
+
                                 </div>
 
 
@@ -81,9 +108,8 @@ const ViewProducts = () => {
                             </div>
 
                         </div>
-                    
-                    </form>
-                    {/* ----------End Form---------- */}
+
+                    {/* ----------End View---------- */}
 
                 </div>
 

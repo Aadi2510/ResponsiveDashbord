@@ -9,15 +9,13 @@ import { Link } from 'react-router-dom';
 const dummyProducts = Array.from({ length: 50 }, (_, index) => ({
   id: index + 1,
   name: `Product ${index + 1}`,
-  category: `Product ${index + 1}`,
-  buying: `Product ${index + 1}`,
-  selling: `Product ${index + 1}`,
+  quantity: `Product ${index + 1}`,
   status: `Product ${index + 1}`
 }));
 
 const ITEMS_PER_PAGE = 10;
 
-const PurchasesTable = () => {
+const StockTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   // Calculate the start and end index for the current page
@@ -38,31 +36,25 @@ const PurchasesTable = () => {
   return (
 
 <section>  
-    <div className='bg-lightsuccess relative rounded-md overflow-x-scroll   '>
-      <table className=' text-sm w-full  table-auto text-left text-gray-500'>
+    <div className='bg-lightsuccess relative overflow-x-auto   '>
+      <table className=' text-sm w-full  text-left text-gray-500'>
         <thead className='text-xs  text-white text-gray-700 uppercase bg-gray-300'>
           <tr className=''>
-            <th scope="col" class="px-6 py-3" >Supplier</th>
-            <th scope="col" class="px-6 py-3" >Date</th>
-            <th scope="col" class="px-6 py-3" >Reference No</th>
+            <th scope="col" class="px-6 py-3" >Name</th>
+            <th scope="col" class="px-6 py-3" >Quantity</th>
             <th scope="col" class="px-6 py-3" >Status</th>
-            <th scope="col" class="px-6 py-3" >Total</th>
-            <th scope="col" class="px-6 py-3" >Payment Status</th>
             <th scope="col" class="px-6 py-3" >Action</th>
           </tr>
         </thead>
         <tbody className=' '>
           {currentProducts.map((product) => (
             <tr key={product.id} className='bg-white border-b'>
-              <td className='px-6 py-4'>{product.id}</td>
               <td className='px-6 py-4'>{product.name}</td>
-              <td className='px-6 py-4'>{product.category}</td>
-              <td className='px-6 py-4'>{product.buying}</td>
-              <td className='px-6 py-4'>{product.selling}</td>
+              <td className='px-6 py-4'>{product.quantity}</td>
               <td className='px-6 py-4'>{product.status}</td>
-              <td className='inline-flex px-6 gap-2 py-4'><Link to="/admin/purchases/viewpurchases" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
-               <Link to="/admin/purchases/editpurchases"><FaRegEdit className='text-green-400 pointer' size={20}/></Link> 
-               <span><MdOutlineDeleteOutline className='text-red-400 pointer' size={20}/></span> 
+              <td className='inline-flex px-6 gap-2 py-4'><Link to="#" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
+               <Link to="#"><FaRegEdit className='text-green-400 pointer' size={20}/></Link> 
+               <Link to="#"><MdOutlineDeleteOutline className='text-red-400 pointer' size={20}/></Link> 
                </td>
             </tr>
           ))}
@@ -125,4 +117,4 @@ const PurchasesTable = () => {
   );
 };
 
-export default PurchasesTable;
+export default StockTable;
