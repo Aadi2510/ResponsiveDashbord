@@ -77,10 +77,10 @@ const Damages = () => {
                       <FaAngleDown className=' ' />
                     </div>
 
-                    <Link to="/admin/purchases/addpurchases" className="px-3 flex justify-around bg-success text-white  gap-2 items-center md:py-1.5 py-1 font-larze  border border-success  focus:ring-4 focus:outline-none  rounded-md ">
+                    <Link to="/admin/damages/add" className="px-3 flex justify-around bg-success text-white  gap-2 items-center md:py-1.5 py-1 font-larze  border border-success  focus:ring-4 focus:outline-none  rounded-md ">
                       <CiCirclePlus className='text-white ' />
                       <button type="button" >
-                        Add Product
+                        Add Damages
                       </button>
                     </Link>
 
@@ -121,7 +121,7 @@ const Damages = () => {
   <div className="mt-2">
     <input
       className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-      type="date"
+      type="datetime-local"
     ></input>
   </div>
 </div>

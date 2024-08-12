@@ -9,7 +9,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 
 
-const EditPurchases = () => {
+const AddDamages = () => {
 
     const [searchTerm, setSearchTerm] = useState('');
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -44,8 +44,8 @@ const EditPurchases = () => {
 
                     <div className=" p-2 relative top-5 my-5 mt-5 antialiased">
                         <div className="text-xl md:py-5 py-3">Dashboard /
-                            <span className='text-gray font-semibold'> Purchase / </span>
-                            <span className='text-gray font-semibold'>Edit</span>
+                            <span className='text-gray font-semibold'> Damages / </span>
+                            <span className='text-gray font-semibold'>Create</span>
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@ const EditPurchases = () => {
 
                                     <div className="md:flex  w-full justify-between ">
 
-                                        <div className="p-2 text-xl font-semibold">Purchase</div>
+                                        <div className="p-2 text-xl font-semibold">Damages</div>
 
 
                                     </div>
@@ -121,23 +121,6 @@ const EditPurchases = () => {
 
                                             <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-2  mx-auto ">
 
-                                                <div>
-                                                    <label htmlFor="" className="text-base font-medium text-gray">
-                                                        {' '}
-                                                        Status<span className='text-success px-1'>*</span>
-                                                    </label>
-
-                                                    <div className="mt-2">
-                                                    <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                      <option selected className='text-gray-400 '>--</option>
-                      <option value="US">United States</option>
-                      <option value="CA">Canada</option>
-                      <option value="FR">France</option>
-                      <option value="DE">Germany</option>
-                    </select>
-                                                    </div>
-                                                    
-                                                </div>
 
                                                 <div>
                                                     <label htmlFor="" className="text-base font-medium text-gray">
@@ -159,25 +142,6 @@ const EditPurchases = () => {
 
                                             {/* ----------------------------------------- */}
 
-                                            <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-2  mx-auto ">
-
-                                                <div>
-                                                    <label htmlFor="" className="text-base font-medium text-gray">
-                                                        {' '}
-                                                        Supplier<span className='text-success px-1'>*</span>
-                                                    </label>
-                                                    <div className="mt-2">
-                                                    <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                      <option selected className='text-gray-400 '>--</option>
-                      <option value="US">United States</option>
-                      <option value="CA">Canada</option>
-                      <option value="FR">France</option>
-                      <option value="DE">Germany</option>
-                    </select>
-                                                    </div>
-                                                </div>
-
-                                            </div>
 
 {/* -------------------------------------------------------------------------------- */}
 
@@ -301,19 +265,6 @@ Products
 
 
 
-<div className='mt-3 p-3 text-base font-medium text-gray'>
-    
-                                                    <label htmlFor="" className="text-base font-medium text-gray">
-                                                        {' '}
-                                                        Note<span className='text-success px-1'>*</span>
-                                                    </label>
-                                                    <div className="mt-2 ">
-
-                                                        <textarea class="resize-none rounded-md flex md:h-60 md:w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
-
-                                                    </div>
-                                                </div>
-
 
 
                                             {/* ------------------------End--------------------------------- */}
@@ -326,7 +277,7 @@ Products
                                                 <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
                                                     <FaCircleCheck  className=' ' />
                                                     <button type="submit" >
-                                                        Save
+                                                    Save
                                                     </button>
                                                 </div>
 
@@ -366,4 +317,4 @@ Products
     )
 }
 
-export default EditPurchases
+export default AddDamages

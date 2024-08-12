@@ -136,7 +136,7 @@ const Purchases = () => {
                   <div className="mt-2">
                           <input
                             className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="date"
+                            type="datetime-local"
                           ></input>
                         </div>
 
