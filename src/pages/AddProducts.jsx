@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { IoSearchSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import { FaCircleCheck } from "react-icons/fa6";
+import { MdOutlinePublishedWithChanges } from "react-icons/md";
 
 
 
@@ -14,10 +15,7 @@ const AddProducts = () => {
 
     const options = ['Option 1', 'Option 2', 'Option 3'];
 
-    const handleChange = (event) => {
-        setSearchTerm(event.target.value);
-        setIsDropdownOpen(true);
-    };
+
 
     const handleBlur = () => {
         // Delay hiding the dropdown to allow clicking on an option
@@ -114,34 +112,17 @@ const AddProducts = () => {
         <input
             type="text"
             value={searchTerm}
-            onChange={handleChange}
             onBlur={handleBlur}
             onFocus={handleFocus}
             placeholder=""
             className="w-full p-2 "
         />
-        <div
-            className={`absolute w-full mt-10 z-10 border border-gray-300 outline-0 rounded-md bg-white shadow-lg ${
-                isDropdownOpen ? 'block' : 'hidden'
-            }`}
-        >
-            <ul className="list-none p-0 m-0 ">
-                {options.map((option, index) => (
-                    <li
-                        key={index}
-                        onClick={() => handleClick(option)}
-                        className="px-4 py-2 cursor-pointer hover:bg-gray-200"
-                    >
-                        {option}
-                    </li>
-                ))}
-            </ul>
-        </div>
+
     </div>
 
-    <svg class="w-4 h-4 m-2 items-center text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5v10M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0V6a3 3 0 0 0-3-3H9m1.5-2-2 2 2 2"/>
-        </svg>                                          
+<MdOutlinePublishedWithChanges className="w-5 h-5 m-2 items-center text-gray-500 dark:text-gray-400" />
+
+                                          
                                           
                                             </div>
 
@@ -199,20 +180,16 @@ const AddProducts = () => {
                                             <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
 
 
-                                                <div>
+                                            <div>
                                                     <label htmlFor="" className="text-base font-medium text-gray">
                                                         {' '}
                                                         Buying Price<span className='text-success px-1'>*</span>
                                                     </label>
                                                     <div className="mt-2">
-                                                        <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                                                            <option selected className='text-gray-400 '>--</option>
-                                                            <option value="US">United States</option>
-                                                            <option value="CA">Canada</option>
-                                                            <option value="FR">France</option>
-                                                            <option value="DE">Germany</option>
-                                                        </select>
-
+                                                        <input
+                                                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                                            type="text"
+                                                        ></input>
                                                     </div>
                                                 </div>
 
@@ -224,14 +201,10 @@ const AddProducts = () => {
                                                         Selling Price<span className='text-success px-1'>*</span>
                                                     </label>
                                                     <div className="mt-2">
-                                                        <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                                                            <option selected className='text-gray-400 '>--</option>
-                                                            <option value="US">United States</option>
-                                                            <option value="CA">Canada</option>
-                                                            <option value="FR">France</option>
-                                                            <option value="DE">Germany</option>
-                                                        </select>
-
+                                                        <input
+                                                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                                            type="text"
+                                                        ></input>
                                                     </div>
                                                 </div>
 
