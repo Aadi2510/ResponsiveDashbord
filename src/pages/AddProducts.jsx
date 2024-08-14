@@ -430,14 +430,31 @@ const AddProducts = () => {
                                                 <div>
                                                     <label htmlFor="" className="text-base font-medium text-gray">
                                                         {' '}
+                                                        Image<span className='text-success px-1'>*</span>
+                                                    </label>
+                                                    <div className="mt-2">
+                                                        <input
+                                                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                                            type="file"
+                                                        ></input>
+                                                    </div>
+                                                </div>
+
+
+                                                <div className='col-span-2'>
+                                                    <label htmlFor="" className="text-base font-medium text-gray">
+                                                        {' '}
                                                         Description<span className='text-success px-1'>*</span>
                                                     </label>
                                                     <div className="mt-2 ">
 
-                                                        <textarea class="resize-none rounded-md flex md:h-60 md:w-[50rem] rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
+                                                        <textarea class="resize-none rounded-md overflow-hidden scroll-smooth overflow-y-scroll flex md:h-60 md:w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
 
                                                     </div>
                                                 </div>
+
+                                               
+
 
                                                 {/* -------------------------Text Area End--------------------------------- */}
 

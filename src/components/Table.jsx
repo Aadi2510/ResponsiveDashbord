@@ -42,7 +42,6 @@ const Table = () => {
       <table className=' text-sm w-full  table-auto text-left text-gray-500'>
         <thead className='text-xs  text-white text-gray-700 uppercase bg-gray-300'>
           <tr className=''>
-            <th scope="col" class="px-6 py-3" >ID</th>
             <th scope="col" class="px-6 py-3" >Name</th>
             <th scope="col" class="px-6 py-3" >Category</th>
             <th scope="col" class="px-6 py-3" >Buying Price</th>
@@ -54,7 +53,6 @@ const Table = () => {
         <tbody className=' '>
           {currentProducts.map((product) => (
             <tr key={product.id} className='bg-white border-b'>
-              <td className='px-6 py-4'>{product.id}</td>
               <td className='px-6 py-4'>{product.name}</td>
               <td className='px-6 py-4'>{product.category}</td>
               <td className='px-6 py-4'>{product.buying}</td>

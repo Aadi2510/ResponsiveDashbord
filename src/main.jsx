@@ -27,6 +27,9 @@ import OfferAddProducts from './pages/OfferAddProducts.jsx'
 import AddDamages from './pages/AddDamages.jsx'
 import POS from './pages/POS.jsx'
 import AddCustomers from './pages/AddCustomers.jsx'
+import Administrators from './pages/Administrators.jsx'
+import ProductsCategory from './pages/ProductsCategory.jsx'
+import PurchasesCategory from './pages/PurchasesCategory.jsx'
 
 
 
@@ -43,6 +46,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path='/admin/products' element={<Products/>} />
         <Route path='/admin/products/addproducts' element={<AddProducts/>} />
+        <Route path='/admin/products/productsCategory' element={<ProductsCategory/>} />
         <Route path='/admin/products/editproducts' element={<EditProducts/>} />
         <Route path='/admin/products/viewproducts' element={<ViewProducts/>} />
         <Route path='/admin/products/viewproducts/variation' element={<ProductsVariation/>} />
@@ -51,6 +55,7 @@ const router = createBrowserRouter(
         <Route path='/admin/products/viewproducts/offer' element={<OfferAddProducts/>} />
         <Route path='/admin/purchases' element={<Purchases/>} />
         <Route path='/admin/purchases/addpurchases' element={<AddPurchases/>} />
+        <Route path='/admin/purchases/purchasesCategory' element={<PurchasesCategory/>} />
         <Route path='/admin/purchases/viewpurchases' element={<ViewPurchases/>} />
         <Route path='/admin/purchases/editpurchases' element={<EditPurchases/>} />
         <Route path='/admin/damages' element={<Damages/>} />
@@ -60,6 +65,7 @@ const router = createBrowserRouter(
         <Route path='/admin/stock' element={<Stock/>} />
         <Route path='/admin/pos' element={<POS/>} />
         <Route path='/admin/pos/addcustomers' element={<AddCustomers/>} />
+        <Route path='/admin/administrators' element={<Administrators/>} />
         <Route path='/admin/profile/edit' element={<Cpassword />} />
         <Route path='/admin/profile/changePassword' element={<Edit />} />
 

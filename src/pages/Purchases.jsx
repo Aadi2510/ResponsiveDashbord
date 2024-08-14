@@ -18,17 +18,17 @@ const Purchases = () => {
   const MytoggleMenu = () => {
     Setcalender(!calender)
   }
-  
-    const [open, Setopen] = useState(false)
 
-    const toggleFilter = () => {
-      Setopen(!open)
-    }
-  
-    return (
+  const [open, Setopen] = useState(false)
+
+  const toggleFilter = () => {
+    Setopen(!open)
+  }
+
+  return (
     <>
 
-<section>
+      <section>
         <div className="  text-neutral-600 mx-auto text-md antialiased font-normal  p-5   ">
 
           <div className=" p-2 relative top-5 my-5 mt-5 antialiased">
@@ -79,10 +79,16 @@ const Purchases = () => {
                     <Link to="/admin/purchases/addpurchases" className="px-3 flex justify-around bg-success text-white  gap-2 items-center md:py-1.5 py-1 font-larze  border border-success  focus:ring-4 focus:outline-none  rounded-md ">
                       <CiCirclePlus className='text-white ' />
                       <button type="button" >
-                        Add Product
+                        Add Purchases
                       </button>
                     </Link>
 
+                    <Link to="/admin/purchases/purchasesCategory" className="px-3 flex justify-around bg-success text-white  gap-2 items-center md:py-1.5 py-1 font-larze  border border-success  focus:ring-4 focus:outline-none  rounded-md ">
+                      <CiCirclePlus className='text-white ' />
+                      <button type="button" >
+                        Add Category
+                      </button>
+                    </Link>
 
 
                   </div>
@@ -100,150 +106,153 @@ const Purchases = () => {
 
               {/* -----------From-------------------- */}
 
-{ open &&
-              <div className="flex  justify-between  my-1 p-1  ">
+              {open &&
 
-                <div className="w-full">
+                <form action="" method="post">
+                  <div className="flex  justify-between  my-1 p-1  ">
 
-                  <div className="">
+                    <div className="w-full">
 
-{/* ---------------Start---------------------- */}
+                      <div className="">
 
-                    <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
+                        {/* ---------------Start---------------------- */}
 
-                    <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Supplier<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
- <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                      <option selected className='text-gray-400 '>--</option>
-                      <option value="US">United States</option>
-                      <option value="CA">Canada</option>
-                      <option value="FR">France</option>
-                      <option value="DE">Germany</option>
-                    </select>
+                        <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Supplier<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+
+                            </div>
+                          </div>
+
+                          <div>
+                            <label htmlFor="" className="font-medium text-graydark">
+                              {' '}
+                              Date{' '}
+                            </label>
+                            <div className="mt-2">
+                              <input
+                                className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                type="datetime-local"
+                              ></input>
+                            </div>
+
+                          </div>
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Reference No<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <input
+                                className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                type="text"
+                              ></input>
+                            </div>
+                          </div>
+
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Status<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+
+                            </div>
+                          </div>
+
 
                         </div>
-                      </div>
 
-                      <div>
-                  <label htmlFor="" className="font-medium text-graydark">
-                    {' '}
-                    Date{' '}
-                  </label>
-                  <div className="mt-2">
-                          <input
-                            className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="datetime-local"
-                          ></input>
-                        </div>
+                        {/* ------------------------------------- */}
 
-                </div>
+                        <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
 
-                      <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Reference No<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
-                          <input
-                            className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="text"
-                          ></input>
-                        </div>
-                      </div>
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Total<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <input
+                                className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                type="text"
+                              ></input>
+                            </div>
+                          </div>
 
 
-                      <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Status<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
- <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                      <option selected className='text-gray-400 '>--</option>
-                      <option value="US">United States</option>
-                      <option value="CA">Canada</option>
-                      <option value="FR">France</option>
-                      <option value="DE">Germany</option>
-                    </select>
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Note<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <input
+                                className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                type="text"
+                              ></input>
+                            </div>
+                          </div>
+
+
+
+
 
                         </div>
+
+                        {/* ------------------------End--------------------------------- */}
+
+
+
+                        {/* ------------Button----------- */}
+                        <div className="p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4 md:w-fit w-full space-y-3 md:space-y-0  me-auto">
+
+                          <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
+                            <FaCircleCheck className=' ' />
+                            <button type="button" >
+                              Search
+                            </button>
+                          </div>
+
+                          <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-gray  focus:ring-4 focus:outline-none  rounded-md ">
+                            x
+                            <button type="button" >
+                              Clear
+                            </button>
+                          </div>
+
+
+                        </div>
+                        {/* -----------Button End--------------- */}
                       </div>
 
 
                     </div>
-
-{/* ------------------------------------- */}
-
-                    <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
-
-                    <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Total<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
-                          <input
-                            className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="text"
-                          ></input>
-                        </div>
-                      </div>
-
-
-
-                      <div>
-                        <label htmlFor="" className="text-base font-medium text-gray">
-                          {' '}
-                          Note<span className='text-success px-1'>*</span>
-                        </label>
-                        <div className="mt-2">
-                          <input
-                            className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                            type="text"
-                          ></input>
-                        </div>
-                      </div>
-
-
-
-
-
-                    </div>
-
-{/* ------------------------End--------------------------------- */}
-
-                 
-                 
-{/* ------------Button----------- */}
-<div className="p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4 md:w-fit w-full space-y-3 md:space-y-0  me-auto">
-
-<div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
-  <FaCircleCheck className=' ' />
-  <button type="button" >
-    Search
-  </button>
-</div>
-
-<div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-gray  focus:ring-4 focus:outline-none  rounded-md ">
-x
-  <button type="button" >
-    Clear
-  </button>
-</div>
-
-
-</div>
-{/* -----------Button End--------------- */}
                   </div>
-
-
-                </div>
-              </div>
-}
+                </form>
+              }
 
               {/* -----------From End-------------------- */}
 
@@ -252,7 +261,7 @@ x
 
                 <div className="w-full">
 
-<PurchasesTable/>
+                  <PurchasesTable />
 
                 </div>
               </div>
