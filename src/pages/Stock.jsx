@@ -77,14 +77,7 @@ const Stock = () => {
                       <FaAngleDown className=' ' />
                     </div>
 
-                    <Link to="/admin/purchases/addpurchases" className="px-3 flex justify-around bg-success text-white  gap-2 items-center md:py-1.5 py-1 font-larze  border border-success  focus:ring-4 focus:outline-none  rounded-md ">
-                      <CiCirclePlus className='text-white ' />
-                      <button type="button" >
-                        Add Product
-                      </button>
-                    </Link>
-
-
+                  
 
                   </div>
 
@@ -164,8 +157,8 @@ const Stock = () => {
 </div>
 
 <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-gray  focus:ring-4 focus:outline-none  rounded-md ">
-x
-  <button type="button" >
+X
+  <button type="reset" >
     Clear
   </button>
 </div>

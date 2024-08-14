@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { IoSearchSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import { FaCircleCheck } from "react-icons/fa6";
-
+import { MdOutlinePublishedWithChanges } from "react-icons/md";
 
 const EditProducts = () => {
 
@@ -113,34 +113,17 @@ const EditProducts = () => {
         <input
             type="text"
             value={searchTerm}
-            onChange={handleChange}
             onBlur={handleBlur}
             onFocus={handleFocus}
             placeholder=""
             className="w-full p-2 "
         />
-        <div
-            className={`absolute w-full mt-10 z-10 border border-gray-300 outline-0 rounded-md bg-white shadow-lg ${
-                isDropdownOpen ? 'block' : 'hidden'
-            }`}
-        >
-            <ul className="list-none p-0 m-0 ">
-                {options.map((option, index) => (
-                    <li
-                        key={index}
-                        onClick={() => handleClick(option)}
-                        className="px-4 py-2 cursor-pointer hover:bg-gray-200"
-                    >
-                        {option}
-                    </li>
-                ))}
-            </ul>
-        </div>
+
     </div>
 
-    <svg class="w-4 h-4 m-2 items-center text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5v10M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0V6a3 3 0 0 0-3-3H9m1.5-2-2 2 2 2"/>
-        </svg>                                          
+<MdOutlinePublishedWithChanges className="w-5 h-5 m-2 items-center text-gray-500 dark:text-gray-400" />
+
+                                          
                                           
                                             </div>
 
@@ -437,7 +420,7 @@ const EditProducts = () => {
 
                                             {/* --------------------------------------- */}
 
-                                            <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
+                                            <div className="  p-3 grid md:grid-cols-2 sm:grid-cols-1  md:gap-5 xl:grid-cols-4  mx-auto">
 
                                                 <div>
                                                     <label htmlFor="" className="text-base font-medium text-gray">
@@ -457,14 +440,31 @@ const EditProducts = () => {
                                                 <div>
                                                     <label htmlFor="" className="text-base font-medium text-gray">
                                                         {' '}
+                                                        Image<span className='text-success px-1'>*</span>
+                                                    </label>
+                                                    <div className="mt-2">
+                                                        <input
+                                                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                                            type="file"
+                                                        ></input>
+                                                    </div>
+                                                </div>
+
+
+                                                 <div className='md:col-span-2 '>
+                                                    <label htmlFor="" className="text-base font-medium text-gray">
+                                                        {' '}
                                                         Description<span className='text-success px-1'>*</span>
                                                     </label>
                                                     <div className="mt-2 ">
 
-                                                        <textarea class="resize-none rounded-md flex md:h-60 md:w-[50rem] rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
+                                                        <textarea placeholder='Insert content here...' className="resize-none flex rounded-md overflow-hidden scroll-smooth sm:h-10 overflow-y-scroll flex md:h-60 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
 
                                                     </div>
-                                                </div>
+                                                </div> 
+
+                                               
+
 
                                                 {/* -------------------------Text Area End--------------------------------- */}
 

@@ -43,7 +43,6 @@ const StockTable = () => {
             <th scope="col" class="px-6 py-3" >Name</th>
             <th scope="col" class="px-6 py-3" >Quantity</th>
             <th scope="col" class="px-6 py-3" >Status</th>
-            <th scope="col" class="px-6 py-3" >Action</th>
           </tr>
         </thead>
         <tbody className=' '>
@@ -52,10 +51,6 @@ const StockTable = () => {
               <td className='px-6 py-4'>{product.name}</td>
               <td className='px-6 py-4'>{product.quantity}</td>
               <td className='px-6 py-4'>{product.status}</td>
-              <td className='inline-flex px-6 gap-2 py-4'><Link to="#" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
-               <Link to="#"><FaRegEdit className='text-green-400 pointer' size={20}/></Link> 
-               <Link to="#"><MdOutlineDeleteOutline className='text-red-400 pointer' size={20}/></Link> 
-               </td>
             </tr>
           ))}
         </tbody>

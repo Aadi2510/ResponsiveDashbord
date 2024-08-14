@@ -48,31 +48,31 @@ const AddProducts = () => {
 
                     {/* ----------Start Form---------*/}
 
-                        <div className=" ">
+                    <div className=" ">
 
-                            <div className=" mt-[2rem]  md:mt-0 border shadow-md md:p-2 bg-white rounded-md antialiased ">
+                        <div className=" mt-[2rem]  md:mt-0 border shadow-md md:p-2 bg-white rounded-md antialiased ">
 
-                                <div className="flex items-center justify-between  p-1  ">
+                            <div className="flex items-center justify-between  p-1  ">
 
-                                    <div className="md:flex  w-full justify-between ">
+                                <div className="md:flex  w-full justify-between ">
 
-                                        <div className="p-2 text-xl font-semibold">Products</div>
-
-
-                                    </div>
-
-
+                                    <div className="p-2 text-xl font-semibold">Products</div>
 
 
                                 </div>
 
-                                <hr className='my-2' />
-                                {/* ---------------------------------------------------- */}
 
 
-                                {/* -----------From-------------------- */}
 
-                                <form action="" method="post">
+                            </div>
+
+                            <hr className='my-2' />
+                            {/* ---------------------------------------------------- */}
+
+
+                            {/* -----------From-------------------- */}
+
+                            <form action="" method="post">
                                 <div className="flex  justify-between  my-1 p-1  ">
 
                                     <div className="w-full">
@@ -98,36 +98,36 @@ const AddProducts = () => {
 
 
                                                 <div>
-    <label htmlFor="" className="text-base font-medium text-gray">
-        {' '}
-        SKU<span className='text-success px-1'>*</span>
-    </label>
-    <div className="mt-2">
-        
-    <div className=' flex justify-around  w-full  border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 '>
+                                                    <label htmlFor="" className="text-base font-medium text-gray">
+                                                        {' '}
+                                                        SKU<span className='text-success px-1'>*</span>
+                                                    </label>
+                                                    <div className="mt-2">
+
+                                                        <div className=' flex justify-around  w-full  border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 '>
 
 
 
-<div className="relative  mx-auto  flex justify-around w-full   ">
-        <input
-            type="text"
-            value={searchTerm}
-            onBlur={handleBlur}
-            onFocus={handleFocus}
-            placeholder=""
-            className="w-full p-2 "
-        />
+                                                            <div className="relative  mx-auto  flex justify-around w-full   ">
+                                                                <input
+                                                                    type="text"
+                                                                    value={searchTerm}
+                                                                    onBlur={handleBlur}
+                                                                    onFocus={handleFocus}
+                                                                    placeholder=""
+                                                                    className="w-full p-2 "
+                                                                />
 
-    </div>
+                                                            </div>
 
-<MdOutlinePublishedWithChanges className="w-5 h-5 m-2 items-center text-gray-500 dark:text-gray-400" />
+                                                            <MdOutlinePublishedWithChanges className="w-5 h-5 m-2 items-center text-gray-500 dark:text-gray-400" />
 
-                                          
-                                          
-                                            </div>
 
-    </div>
-</div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
 
 
 
@@ -180,7 +180,7 @@ const AddProducts = () => {
                                             <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
 
 
-                                            <div>
+                                                <div>
                                                     <label htmlFor="" className="text-base font-medium text-gray">
                                                         {' '}
                                                         Buying Price<span className='text-success px-1'>*</span>
@@ -441,19 +441,19 @@ const AddProducts = () => {
                                                 </div>
 
 
-                                                <div className='col-span-2'>
+                                                <div className='md:col-span-2'>
                                                     <label htmlFor="" className="text-base font-medium text-gray">
                                                         {' '}
                                                         Description<span className='text-success px-1'>*</span>
                                                     </label>
                                                     <div className="mt-2 ">
 
-                                                        <textarea class="resize-none rounded-md overflow-hidden scroll-smooth overflow-y-scroll flex md:h-60 md:w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
+                                                        <textarea placeholder='Insert content here...' className="resize-none w-full rounded-md overflow-hidden scroll-smooth overflow-y-scroll flex md:h-60 md:w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
 
                                                     </div>
                                                 </div>
 
-                                               
+
 
 
                                                 {/* -------------------------Text Area End--------------------------------- */}
@@ -495,14 +495,14 @@ const AddProducts = () => {
 
 
 
-                                {/* -----------From End-------------------- */}
+                            {/* -----------From End-------------------- */}
 
-
-                            </div>
 
                         </div>
-                    
-                  
+
+                    </div>
+
+
                     {/* ----------End Form---------- */}
 
                 </div>

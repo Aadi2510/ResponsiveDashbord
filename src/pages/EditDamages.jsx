@@ -261,7 +261,24 @@ Products
 
 </div>
 
+<div className=" p-3 grid md:grid-cols-1 md:gap-5 xl:grid-cols-1  mx-auto ">
+{/* -------------------------Text Area Start--------------------------------- */}
 
+<div className=''>
+    <label htmlFor="" className="text-base font-medium text-gray">
+        {' '}
+        Note<span className='text-success px-1'>*</span>
+    </label>
+    <div className="mt-2 ">
+
+        <textarea placeholder='Insert content here...' className="resize-none w-full rounded-md overflow-hidden scroll-smooth overflow-y-scroll flex md:h-60 md:w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"></textarea>
+
+    </div>
+</div>
+
+
+{/* -------------------------Text Area End--------------------------------- */}
+</div>
 
 
 
