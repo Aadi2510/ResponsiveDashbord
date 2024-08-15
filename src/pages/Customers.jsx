@@ -11,10 +11,11 @@ import PurchasesTable from '../components/PurchasesTable';
 import { FaCircleCheck } from "react-icons/fa6";
 import DamagesTable from '../components/DamagesTable';
 import AdministratorsTable from '../components/AdministratorsTable';
+import CustomersTable from '../components/CustomersTable';
 
 
 
-const Administrators = () => {
+const Customers = () => {
 
     const [calender, Setcalender] = useState(false)
     const MytoggleMenu = () => {
@@ -34,7 +35,7 @@ const Administrators = () => {
                 <div className="  text-neutral-600 mx-auto text-md antialiased font-normal  p-5   ">
 
                     <div className=" p-2 relative top-5 my-5 mt-5 antialiased">
-                        <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'>Administrators</span></div>
+                        <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'>Customers</span></div>
                     </div>
                     {/* ----------Start---------- */}
 
@@ -47,7 +48,7 @@ const Administrators = () => {
 
                                 <div className="md:flex  w-full justify-between ">
 
-                                    <div className="p-2 text-xl font-semibold">Administrators</div>
+                                    <div className="p-2 text-xl font-semibold">Customers</div>
 
                                     <div className="md:flex md:space-y-0 space-y-2 mx-auto md:mx-0  gap-4 ">
 
@@ -78,10 +79,10 @@ const Administrators = () => {
                                             <FaAngleDown className=' ' />
                                         </div>
 
-                                        <Link to="/admin/administrators/addadministrators" className="px-3 flex justify-around bg-success text-white  gap-2 items-center md:py-1.5 py-1 font-larze  border border-success  focus:ring-4 focus:outline-none  rounded-md ">
+                                        <Link to="/admin/customers/addcustomers" className="px-3 flex justify-around bg-success text-white  gap-2 items-center md:py-1.5 py-1 font-larze  border border-success  focus:ring-4 focus:outline-none  rounded-md ">
                                             <CiCirclePlus className='text-white ' />
                                             <button type="button" >
-                                                Add Administrators
+                                                Add Customers
                                             </button>
                                         </Link>
 
@@ -218,7 +219,7 @@ const Administrators = () => {
 
                                 <div className="w-full">
 
-<AdministratorsTable/>
+<CustomersTable/>
 
                                 </div>
                             </div>
@@ -244,4 +245,4 @@ const Administrators = () => {
     )
 }
 
-export default Administrators
+export default Customers

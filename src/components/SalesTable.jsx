@@ -8,15 +8,18 @@ import { Link } from 'react-router-dom';
 // Dummy data for products
 const dummyProducts = Array.from({ length: 50 }, (_, index) => ({
   id: index + 1,
-  name: `Product ${index + 1}`,
-  email: `Product ${index + 1}`,
-  phone: `Product ${index + 1}`,
-  status: `Product ${index + 1}`
+  OrderID: `Product ${index + 1}`,
+  Date: `Product ${index + 1}`,
+  Total: `Product ${index + 1}`,
+  Discount: `Product ${index + 1}`,
+  Shipping: `Product ${index + 1}`,
+  Payment: `Product ${index + 1}`,
+  Status: `Product ${index + 1}`
 }));
 
 const ITEMS_PER_PAGE = 10;
 
-const AdministratorsTable = () => {
+const SalesTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   // Calculate the start and end index for the current page
@@ -41,30 +44,29 @@ const AdministratorsTable = () => {
       <table className=' text-sm w-full  table-auto text-left text-gray-500'>
         <thead className='text-xs  text-white text-gray-700 uppercase bg-gray-300'>
           <tr className=''>
-            <th scope="col" class="px-6 py-3" >Name</th>
-            <th scope="col" class="px-6 py-3" >Email</th>
-            <th scope="col" class="px-6 py-3" >Phone</th>
-            <th scope="col" class="px-6 py-3" >Status</th>
-            <th scope="col" class="px-6 py-3" >Action</th>
+            <th scope="col" class="px-6 py-3" >Order ID</th>
+            <th scope="col" class="px-6 py-3" >Date</th>
+            <th scope="col" class="px-6 py-3" >Total</th>
+            <th scope="col" class="px-6 py-3" >Discount</th>
+            <th scope="col" class="px-6 py-3" >Shipping Charge</th>
+            <th scope="col" class="px-6 py-3" >Payment Type</th>
+            <th scope="col" class="px-6 py-3" >Payment Status</th>
           </tr>
         </thead>
         <tbody className=' '>
           {currentProducts.map((product) => (
             <tr key={product.id} className='bg-white border-b'>
-              <td className='px-6 py-4'>{product.name}</td>
-              <td className='px-6 py-4'>{product.email}</td>
-              <td className='px-6 py-4'>{product.phone}</td>
-              <td className='px-6 py-4'>{product.status}</td>
-              <td className='inline-flex px-6 gap-2 py-4'><Link to="/admin/administrators/viewadministrators" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
-               <Link to="/admin/administrators/editadministrators"><FaRegEdit className='text-green-400 pointer' size={20}/></Link> 
-               <Link to=""><MdOutlineDeleteOutline className='text-red-400 pointer' size={20}/></Link> 
-               </td>
+              <td className='px-6 py-4'>{product.OrderID}</td>
+              <td className='px-6 py-4'>{product.Date}</td>
+              <td className='px-6 py-4'>{product.Total}</td>
+              <td className='px-6 py-4'>{product.Discount}</td>
+              <td className='px-6 py-4'>{product.Shipping}</td>
+              <td className='px-6 py-4'>{product.Payment}</td>
+              <td className='px-6 py-4'>{product.Status}</td>
             </tr>
           ))}
         </tbody>
       </table>
-
-
 
 
 <div className="flex w-full p-3 justify-between ">
@@ -105,13 +107,9 @@ const AdministratorsTable = () => {
             <span className="block lg:hidden">&rarr;</span>
           </button>
 
-
       </div>
 
-
 </div>
-
-
 
 
     </div>
@@ -120,4 +118,4 @@ const AdministratorsTable = () => {
   );
 };
 
-export default AdministratorsTable;
+export default SalesTable;

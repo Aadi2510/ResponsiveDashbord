@@ -40,7 +40,7 @@ const Stock = () => {
 
           <div className=" ">
 
-            <div className=" mt-[2rem]  md:mt-0 border shadow-md md:p-2 bg-white rounded-md antialiased ">
+            <div className=" mt-[2rem]  md:mt-0  shadow-md md:p-2 bg-white rounded-md antialiased ">
 
               <div className="flex items-center justify-between  p-1  ">
 
@@ -82,9 +82,6 @@ const Stock = () => {
                   </div>
 
                 </div>
-
-
-
 
               </div>
 

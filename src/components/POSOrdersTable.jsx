@@ -8,15 +8,15 @@ import { Link } from 'react-router-dom';
 // Dummy data for products
 const dummyProducts = Array.from({ length: 50 }, (_, index) => ({
   id: index + 1,
-  name: `Product ${index + 1}`,
-  email: `Product ${index + 1}`,
-  phone: `Product ${index + 1}`,
-  status: `Product ${index + 1}`
+  orderID: `Product ${index + 1}`,
+  customer: `Product ${index + 1}`,
+  amount: `Product ${index + 1}`,
+  date: `Product ${index + 1}`
 }));
 
 const ITEMS_PER_PAGE = 10;
 
-const AdministratorsTable = () => {
+const POSOrdersTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   // Calculate the start and end index for the current page
@@ -41,22 +41,21 @@ const AdministratorsTable = () => {
       <table className=' text-sm w-full  table-auto text-left text-gray-500'>
         <thead className='text-xs  text-white text-gray-700 uppercase bg-gray-300'>
           <tr className=''>
-            <th scope="col" class="px-6 py-3" >Name</th>
-            <th scope="col" class="px-6 py-3" >Email</th>
-            <th scope="col" class="px-6 py-3" >Phone</th>
-            <th scope="col" class="px-6 py-3" >Status</th>
+            <th scope="col" class="px-6 py-3" >Order ID</th>
+            <th scope="col" class="px-6 py-3" >Customer</th>
+            <th scope="col" class="px-6 py-3" >Amount</th>
+            <th scope="col" class="px-6 py-3" >Date</th>
             <th scope="col" class="px-6 py-3" >Action</th>
           </tr>
         </thead>
         <tbody className=' '>
           {currentProducts.map((product) => (
             <tr key={product.id} className='bg-white border-b'>
-              <td className='px-6 py-4'>{product.name}</td>
-              <td className='px-6 py-4'>{product.email}</td>
-              <td className='px-6 py-4'>{product.phone}</td>
-              <td className='px-6 py-4'>{product.status}</td>
-              <td className='inline-flex px-6 gap-2 py-4'><Link to="/admin/administrators/viewadministrators" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
-               <Link to="/admin/administrators/editadministrators"><FaRegEdit className='text-green-400 pointer' size={20}/></Link> 
+              <td className='px-6 py-4'>{product.orderID}</td>
+              <td className='px-6 py-4'>{product.customer}</td>
+              <td className='px-6 py-4'>{product.amount}</td>
+              <td className='px-6 py-4'>{product.date}</td>
+              <td className='inline-flex px-6 gap-2 py-4'><Link to="" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
                <Link to=""><MdOutlineDeleteOutline className='text-red-400 pointer' size={20}/></Link> 
                </td>
             </tr>
@@ -120,4 +119,4 @@ const AdministratorsTable = () => {
   );
 };
 
-export default AdministratorsTable;
+export default POSOrdersTable;

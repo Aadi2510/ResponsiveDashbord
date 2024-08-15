@@ -11,10 +11,12 @@ import PurchasesTable from '../components/PurchasesTable';
 import { FaCircleCheck } from "react-icons/fa6";
 import DamagesTable from '../components/DamagesTable';
 import AdministratorsTable from '../components/AdministratorsTable';
+import CustomersTable from '../components/CustomersTable';
+import POSOrdersTable from '../components/POSOrdersTable';
 
 
 
-const Administrators = () => {
+const POSOrders = () => {
 
     const [calender, Setcalender] = useState(false)
     const MytoggleMenu = () => {
@@ -34,7 +36,7 @@ const Administrators = () => {
                 <div className="  text-neutral-600 mx-auto text-md antialiased font-normal  p-5   ">
 
                     <div className=" p-2 relative top-5 my-5 mt-5 antialiased">
-                        <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'>Administrators</span></div>
+                        <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'>POS Orders</span></div>
                     </div>
                     {/* ----------Start---------- */}
 
@@ -47,7 +49,7 @@ const Administrators = () => {
 
                                 <div className="md:flex  w-full justify-between ">
 
-                                    <div className="p-2 text-xl font-semibold">Administrators</div>
+                                    <div className="p-2 text-xl font-semibold">POS Orders</div>
 
                                     <div className="md:flex md:space-y-0 space-y-2 mx-auto md:mx-0  gap-4 ">
 
@@ -77,15 +79,6 @@ const Administrators = () => {
                                             </button>
                                             <FaAngleDown className=' ' />
                                         </div>
-
-                                        <Link to="/admin/administrators/addadministrators" className="px-3 flex justify-around bg-success text-white  gap-2 items-center md:py-1.5 py-1 font-larze  border border-success  focus:ring-4 focus:outline-none  rounded-md ">
-                                            <CiCirclePlus className='text-white ' />
-                                            <button type="button" >
-                                                Add Administrators
-                                            </button>
-                                        </Link>
-
-
 
                                     </div>
 
@@ -118,7 +111,7 @@ const Administrators = () => {
                                                     <div>
                                                         <label htmlFor="" className="text-base font-medium text-gray">
                                                             {' '}
-                                                            Name<span className='text-success px-1'>*</span>
+                                                            Order ID<span className='text-success px-1'>*</span>
                                                         </label>
                                                         <div className="mt-2">
                                                             <input
@@ -127,34 +120,6 @@ const Administrators = () => {
                                                             ></input>
                                                         </div>
                                                     </div>
-
-                                                    <div>
-                                                        <label htmlFor="" className="text-base font-medium text-gray">
-                                                            {' '}
-                                                            Email<span className='text-success px-1'>*</span>
-                                                        </label>
-                                                        <div className="mt-2">
-                                                            <input
-                                                                className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                                                                type="email"
-                                                            ></input>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div>
-                                                        <label htmlFor="" className="text-base font-medium text-gray">
-                                                            {' '}
-                                                            Phone<span className='text-success px-1'>*</span>
-                                                        </label>
-                                                        <div className="mt-2">
-                                                            <input
-                                                                className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                                                                type="text"
-                                                            ></input>
-                                                        </div>
-                                                    </div>
-
 
                                                     <div>
                                                         <label htmlFor="" className="text-base font-medium text-gray">
@@ -172,7 +137,37 @@ const Administrators = () => {
 
                                                         </div>
                                                     </div>
+                                                    <div>
+                                                        <label htmlFor="" className="text-base font-medium text-gray">
+                                                            {' '}
+                                                            Customer<span className='text-success px-1'>*</span>
+                                                        </label>
+                                                        <div className="mt-2">
+                                                            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                                                <option selected className='text-gray-400 '>--</option>
+                                                                <option value="US">United States</option>
+                                                                <option value="CA">Canada</option>
+                                                                <option value="FR">France</option>
+                                                                <option value="DE">Germany</option>
+                                                            </select>
 
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div>
+                                                        <label htmlFor="" className="text-base font-medium text-gray">
+                                                            {' '}
+                                                            Date<span className='text-success px-1'>*</span>
+                                                        </label>
+                                                        <div className="mt-2">
+                                                            <input
+                                                                className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                                                type="date"
+                                                            ></input>
+                                                        </div>
+                                                    </div>
 
 
                                                 </div>
@@ -218,7 +213,7 @@ const Administrators = () => {
 
                                 <div className="w-full">
 
-<AdministratorsTable/>
+<POSOrdersTable/>
 
                                 </div>
                             </div>
@@ -244,4 +239,4 @@ const Administrators = () => {
     )
 }
 
-export default Administrators
+export default POSOrders

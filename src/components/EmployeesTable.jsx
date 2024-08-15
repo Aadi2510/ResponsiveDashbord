@@ -11,12 +11,13 @@ const dummyProducts = Array.from({ length: 50 }, (_, index) => ({
   name: `Product ${index + 1}`,
   email: `Product ${index + 1}`,
   phone: `Product ${index + 1}`,
+  role: `Product ${index + 1}`,
   status: `Product ${index + 1}`
 }));
 
 const ITEMS_PER_PAGE = 10;
 
-const AdministratorsTable = () => {
+const EmployeesTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   // Calculate the start and end index for the current page
@@ -44,6 +45,7 @@ const AdministratorsTable = () => {
             <th scope="col" class="px-6 py-3" >Name</th>
             <th scope="col" class="px-6 py-3" >Email</th>
             <th scope="col" class="px-6 py-3" >Phone</th>
+            <th scope="col" class="px-6 py-3" >Role</th>
             <th scope="col" class="px-6 py-3" >Status</th>
             <th scope="col" class="px-6 py-3" >Action</th>
           </tr>
@@ -54,9 +56,10 @@ const AdministratorsTable = () => {
               <td className='px-6 py-4'>{product.name}</td>
               <td className='px-6 py-4'>{product.email}</td>
               <td className='px-6 py-4'>{product.phone}</td>
+              <td className='px-6 py-4'>{product.role}</td>
               <td className='px-6 py-4'>{product.status}</td>
-              <td className='inline-flex px-6 gap-2 py-4'><Link to="/admin/administrators/viewadministrators" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
-               <Link to="/admin/administrators/editadministrators"><FaRegEdit className='text-green-400 pointer' size={20}/></Link> 
+              <td className='inline-flex px-6 gap-2 py-4'><Link to="/admin/employees/viewemployees" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
+               <Link to="/admin/employees/editemployees"><FaRegEdit className='text-green-400 pointer' size={20}/></Link> 
                <Link to=""><MdOutlineDeleteOutline className='text-red-400 pointer' size={20}/></Link> 
                </td>
             </tr>
@@ -120,4 +123,4 @@ const AdministratorsTable = () => {
   );
 };
 
-export default AdministratorsTable;
+export default EmployeesTable;

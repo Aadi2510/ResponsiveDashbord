@@ -16,7 +16,7 @@ const dummyProducts = Array.from({ length: 50 }, (_, index) => ({
 
 const ITEMS_PER_PAGE = 10;
 
-const AdministratorsTable = () => {
+const CustomersTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   // Calculate the start and end index for the current page
@@ -55,8 +55,8 @@ const AdministratorsTable = () => {
               <td className='px-6 py-4'>{product.email}</td>
               <td className='px-6 py-4'>{product.phone}</td>
               <td className='px-6 py-4'>{product.status}</td>
-              <td className='inline-flex px-6 gap-2 py-4'><Link to="/admin/administrators/viewadministrators" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
-               <Link to="/admin/administrators/editadministrators"><FaRegEdit className='text-green-400 pointer' size={20}/></Link> 
+              <td className='inline-flex px-6 gap-2 py-4'><Link to="/admin/customers/viewcustomers" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
+               <Link to="/admin/customers/editCustomers"><FaRegEdit className='text-green-400 pointer' size={20}/></Link> 
                <Link to=""><MdOutlineDeleteOutline className='text-red-400 pointer' size={20}/></Link> 
                </td>
             </tr>
@@ -120,4 +120,4 @@ const AdministratorsTable = () => {
   );
 };
 
-export default AdministratorsTable;
+export default CustomersTable;

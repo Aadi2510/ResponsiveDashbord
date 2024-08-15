@@ -7,7 +7,7 @@ import { MdOutlinePublishedWithChanges } from "react-icons/md";
 
 
 
-const AddCustomers = () => {
+const POSAddCustomers = () => {
 
 
     const [searchTerm, setSearchTerm] = useState('');
@@ -41,7 +41,9 @@ const AddCustomers = () => {
 
                     <div className=" p-2 relative top-5 my-5 mt-5 antialiased">
                         <div className="text-xl md:py-5 py-3">Dashboard /
-                            <span className='text-gray font-semibold'> Customers</span>
+                            <span className='text-gray font-semibold'>POS /</span>
+                            <span className='text-gray font-semibold'>Create
+                            </span>
                         </div>
                     </div>
 
@@ -55,7 +57,7 @@ const AddCustomers = () => {
 
                                 <div className="md:flex  w-full justify-between ">
 
-                                    <div className="p-2 text-xl font-semibold">Create
+                                    <div className="p-2 text-xl font-semibold">Customers
                                     </div>
 
 
@@ -193,7 +195,7 @@ const AddCustomers = () => {
                                                     </button>
                                                 </div>
 
-                                                <Link to="" className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-gray  focus:ring-4 focus:outline-none  rounded-md ">
+                                                <Link to="/admin/products" className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-gray  focus:ring-4 focus:outline-none  rounded-md ">
                                                     X
                                                     <button type="reset" >
                                                         Clear
@@ -231,4 +233,4 @@ const AddCustomers = () => {
     )
 }
 
-export default AddCustomers
+export default POSAddCustomers

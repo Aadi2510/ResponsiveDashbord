@@ -7,7 +7,7 @@ import { MdOutlinePublishedWithChanges } from "react-icons/md";
 
 
 
-const AddCustomers = () => {
+const EditCustomers = () => {
 
 
     const [searchTerm, setSearchTerm] = useState('');
@@ -55,7 +55,7 @@ const AddCustomers = () => {
 
                                 <div className="md:flex  w-full justify-between ">
 
-                                    <div className="p-2 text-xl font-semibold">Create
+                                    <div className="p-2 text-xl font-semibold">Edit
                                     </div>
 
 
@@ -231,4 +231,4 @@ const AddCustomers = () => {
     )
 }
 
-export default AddCustomers
+export default EditCustomers

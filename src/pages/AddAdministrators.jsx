@@ -7,7 +7,7 @@ import { MdOutlinePublishedWithChanges } from "react-icons/md";
 
 
 
-const AddCustomers = () => {
+const AddAdministrators = () => {
 
 
     const [searchTerm, setSearchTerm] = useState('');
@@ -41,7 +41,8 @@ const AddCustomers = () => {
 
                     <div className=" p-2 relative top-5 my-5 mt-5 antialiased">
                         <div className="text-xl md:py-5 py-3">Dashboard /
-                            <span className='text-gray font-semibold'> Customers</span>
+                            <span className='text-gray font-semibold'>Add Administrators
+                            </span>
                         </div>
                     </div>
 
@@ -55,7 +56,7 @@ const AddCustomers = () => {
 
                                 <div className="md:flex  w-full justify-between ">
 
-                                    <div className="p-2 text-xl font-semibold">Create
+                                    <div className="p-2 text-xl font-semibold">Administrators
                                     </div>
 
 
@@ -231,4 +232,4 @@ const AddCustomers = () => {
     )
 }
 
-export default AddCustomers
+export default AddAdministrators
