@@ -165,14 +165,14 @@ const ViewPOSOrders = () => {
 </div><hr className='my-2'/>
 
 
-<div className="flex space-y-2 justify-between  ">
+<div className="md:flex  space-y-2 justify-between  ">
 
-<div><IoMailUnreadOutline className='size-5 flex justify-center items-center'/></div><div>walkingcustomer@example.com</div>
+<div className=''><IoMailUnreadOutline className='size-5 flex mx-auto md:mx-0 justify-center items-center'/></div><div>walkingcustomer@example.com</div>
 </div>
 
-<div className=" flex space-y-2 justify-between">
+<div className=" md:flex space-y-2 justify-between">
 
-<div><BsTelephone className='size-5 flex justify-center items-center'/></div><div>+880125444455</div>
+<div className=''><BsTelephone className='size-5 flex mx-auto md:mx-0 justify-center items-center'/></div><div>+880125444455</div>
 </div>
 
 
@@ -189,14 +189,6 @@ const ViewPOSOrders = () => {
                         </div>
 
                     </div>
-
-                    <div className="px-3 my-3 flex justify-around md:w-fit w-full gap-2 ms-auto items-center py-1.5  font-larze text-white bg-green-500  focus:ring-4 focus:outline-none  rounded-md ">
-                        <IoMdPrint className=' ' />
-                        <button type="submit" >
-                            Print
-                        </button>
-                    </div>
-
 
 
                     {/* ----------End View---------*/}
