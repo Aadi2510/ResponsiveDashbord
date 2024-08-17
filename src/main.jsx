@@ -52,6 +52,8 @@ import EditEmployees from './pages/EditEmployees.jsx'
 import SalesReport from './pages/SalesReport.jsx'
 import ProductsReport from './pages/ProductsReport.jsx'
 import POSOrders from './pages/POSOrders.jsx'
+import Settings from './pages/Settings/Settings.jsx'
+import ViewPOSOrders from './pages/ViewPOSOrders.jsx'
 
 
 
@@ -86,8 +88,9 @@ const router = createBrowserRouter(
         <Route path='/admin/damages/edit' element={<EditDamages/>} />
         <Route path='/admin/stock' element={<Stock/>} />
         <Route path='/admin/pos' element={<POS/>} />
-        <Route path='/admin/posOrders' element={<POSOrders/>} />
         <Route path='/admin/pos/addcustomers' element={<POSAddCustomers/>} />
+        <Route path='/admin/posOrders' element={<POSOrders/>} />
+        <Route path='/admin/posOrders/viewposorders' element={<ViewPOSOrders/>} />
         <Route path='/admin/administrators' element={<Administrators/>} />
         <Route path='/admin/administrators/addadministrators' element={<AddAdministrators/>} />
         <Route path='/admin/administrators/editadministrators' element={<EditAdministrators/>} />
@@ -110,6 +113,7 @@ const router = createBrowserRouter(
         <Route path='/admin/employees/viewemployees/employeesaddress/addresscategory' element={<EmpAddCategory/>} />
         <Route path='/admin/salesReport' element={<SalesReport/>} />
         <Route path='/admin/productsReport' element={<ProductsReport/>} />
+        <Route path='/admin/settings' element={<Settings/>} />
         <Route path='/admin/profile/edit' element={<Cpassword />} />
         <Route path='/admin/profile/changePassword' element={<Edit />} />
 

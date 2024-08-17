@@ -55,7 +55,7 @@ const POSOrdersTable = () => {
               <td className='px-6 py-4'>{product.customer}</td>
               <td className='px-6 py-4'>{product.amount}</td>
               <td className='px-6 py-4'>{product.date}</td>
-              <td className='inline-flex px-6 gap-2 py-4'><Link to="" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
+              <td className='inline-flex px-6 gap-2 py-4'><Link to="/admin/posOrders/viewposorders" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
                <Link to=""><MdOutlineDeleteOutline className='text-red-400 pointer' size={20}/></Link> 
                </td>
             </tr>
