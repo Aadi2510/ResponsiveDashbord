@@ -15,6 +15,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 const Purchases = () => {
 
   const [calender, Setcalender] = useState(false)
+  
   const MytoggleMenu = () => {
     Setcalender(!calender)
   }

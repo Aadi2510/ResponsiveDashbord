@@ -54,6 +54,20 @@ import ProductsReport from './pages/ProductsReport.jsx'
 import POSOrders from './pages/POSOrders.jsx'
 import Settings from './pages/Settings/Settings.jsx'
 import ViewPOSOrders from './pages/ViewPOSOrders.jsx'
+import EditPermissions from './pages/Settings/EditPermissions.jsx'
+import AddCountries from './pages/Settings/Countries/AddCountries.jsx'
+import EditCountries from './pages/Settings/Countries/EditCountries.jsx'
+import AddStates from './pages/Settings/States/AddStates.jsx'
+import EditStates from './pages/Settings/States/EditStates.jsx'
+import AddCities from './pages/Settings/Cities/AddCities.jsx'
+import EditCities from './pages/Settings/Cities/EditCities.jsx'
+import AddCurrencies from './pages/Settings/Currencies/AddCurrencies.jsx'
+import EditCurrencies from './pages/Settings/Currencies/EditCurrencies.jsx'
+import AddProductCategories from './pages/Settings/ProductCategories/AddProductCategories.jsx'
+import EditProductCategories from './pages/Settings/ProductCategories/EditProductCategories.jsx'
+import ParentCategory from './pages/Settings/ProductCategories/ParentCategory.jsx'
+import AddProductAttributes from './pages/Settings/ProductAttributes/AddProductAttributes.jsx'
+import EditProductAttributes from './pages/Settings/ProductAttributes/EditProductAttributes.jsx'
 
 
 
@@ -114,6 +128,24 @@ const router = createBrowserRouter(
         <Route path='/admin/salesReport' element={<SalesReport/>} />
         <Route path='/admin/productsReport' element={<ProductsReport/>} />
         <Route path='/admin/settings' element={<Settings/>} />
+        <Route path='/admin/settings/addCountries' element={<AddCountries/>} />
+        <Route path='/admin/settings/editCountries' element={<EditCountries/>} />
+        <Route path='/admin/settings/addStates' element={<AddStates/>} />
+        <Route path='/admin/settings/editStates' element={<EditStates/>} />
+        <Route path='/admin/settings/addCities' element={<AddCities/>} />
+        <Route path='/admin/settings/editCities' element={<EditCities/>} />
+
+        <Route path='/admin/settings/addCurrencies' element={<AddCurrencies/>} />
+        <Route path='/admin/settings/editCurrencies' element={<EditCurrencies/>} />
+        <Route path='/admin/settings/addProductCategories' element={<AddProductCategories/>} />
+        <Route path='/admin/settings/editProductCategories' element={<EditProductCategories/>} />
+        <Route path='/admin/settings/parentCategory' element={<ParentCategory/>} />
+        <Route path='/admin/settings/addProductAttributes' element={<AddProductAttributes/>} />
+        <Route path='/admin/settings/editProductAttributes' element={<EditProductAttributes/>} />
+
+
+        
+        <Route path='/admin/settings/permissions' element={<EditPermissions/>} />
         <Route path='/admin/profile/edit' element={<Cpassword />} />
         <Route path='/admin/profile/changePassword' element={<Edit />} />
 

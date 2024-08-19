@@ -107,7 +107,7 @@ const Products = () => {
                     <Link to="/admin/products/productsCategory" className="px-3 flex justify-around bg-success text-white  gap-2 items-center md:py-1.5 py-1 font-larze  border border-success  focus:ring-4 focus:outline-none  rounded-md ">
                       <CiCirclePlus className='text-white ' />
                       <button type="button" >
-                       Add Category
+                        Add Category
                       </button>
                     </Link>
 
@@ -129,300 +129,300 @@ const Products = () => {
               {/* -----------From-------------------- */}
 
               {open &&
-          <form action="" method="post">
-                <div className="flex  justify-between  my-1 p-1  ">
+                <form action="" method="post">
+                  <div className="flex  justify-between  my-1 p-1  ">
 
-                  <div className="w-full">
+                    <div className="w-full">
 
-                    <div className="">
+                      <div className="">
 
-                      {/* ---------------Start---------------------- */}
+                        {/* ---------------Start---------------------- */}
 
-                      <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
+                        <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
 
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Name<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <input
-                              className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                              type="text"
-                            ></input>
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Name<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <input
+                                className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                type="text"
+                              ></input>
+                            </div>
                           </div>
-                        </div>
 
 
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            SKU<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              SKU<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
 
-                            <div className=' flex justify-around  w-full  border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 '>
+                              <div className=' flex justify-around  w-full  border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 '>
 
 
 
-                              <div className="relative  mx-auto  flex justify-around w-full   ">
-                                <input
-                                  type="text"
-                                  value={searchTerm}
-                                  onBlur={handleBlur}
-                                  onFocus={handleFocus}
-                                  placeholder=""
-                                  className="w-full p-2 "
-                                />
+                                <div className="relative  mx-auto  flex justify-around w-full   ">
+                                  <input
+                                    type="text"
+                                    value={searchTerm}
+                                    onBlur={handleBlur}
+                                    onFocus={handleFocus}
+                                    placeholder=""
+                                    className="w-full p-2 "
+                                  />
+
+                                </div>
+
+                                <MdOutlinePublishedWithChanges className="w-5 h-5 m-2 items-center text-gray-500 dark:text-gray-400" />
+
+
 
                               </div>
 
-                              <MdOutlinePublishedWithChanges className="w-5 h-5 m-2 items-center text-gray-500 dark:text-gray-400" />
+                            </div>
+                          </div>
 
 
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Buying Price<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <input
+                                className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                type="text"
+                              ></input>
+                            </div>
+                          </div>
+
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Selling Price<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <input
+                                className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                type="text"
+                              ></input>
+                            </div>
+                          </div>
+
+
+
+                        </div>
+
+                        {/* ------------------------------------- */}
+
+                        <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Category<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
 
                             </div>
-
                           </div>
+
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Brand<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                            </div>
+                          </div>
+
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Barcode<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                            </div>
+                          </div>
+
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Tax<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                            </div>
+                          </div>
+
+
+
                         </div>
 
+                        {/* ----------------------------------------- */}
 
+                        <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
 
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Buying Price<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <input
-                              className="flex h-10 rounded-md w-full border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                              type="text"
-                            ></input>
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Unit<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                            </div>
                           </div>
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Status<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                            </div>
+                          </div>
+
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Purchasable<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                            </div>
+                          </div>
+
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Show Stock Out<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                            </div>
+                          </div>
+
+
+
                         </div>
 
+                        {/* ---------------------------------------------- */}
 
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Selling Price<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <input
-                              className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                              type="text"
-                            ></input>
+
+                        <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
+
+                          <div>
+                            <label htmlFor="" className="text-base font-medium text-gray">
+                              {' '}
+                              Refundable<span className='text-success px-1'>*</span>
+                            </label>
+                            <div className="mt-2">
+                              <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                <option selected className='text-gray-400 '>--</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                              </select>
+                            </div>
                           </div>
+
+
                         </div>
 
+                        {/* ------------------------End--------------------------------- */}
 
 
+
+                        {/* ------------Button----------- */}
+                        <div className="p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4 md:w-fit w-full space-y-3 md:space-y-0  me-auto">
+
+                          <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
+                            <FaCircleCheck className=' ' />
+                            <button type="button" >
+                              Save
+                            </button>
+                          </div>
+
+                          <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-gray  focus:ring-4 focus:outline-none  rounded-md ">
+                            X
+                            <button type="button" >
+                              Clear
+                            </button>
+                          </div>
+
+
+                        </div>
+                        {/* -----------Button End--------------- */}
                       </div>
 
-                      {/* ------------------------------------- */}
 
-                      <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
-
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Category<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                              <option selected className='text-gray-400 '>--</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-
-                          </div>
-                        </div>
-
-
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Brand<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                              <option selected className='text-gray-400 '>--</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-                          </div>
-                        </div>
-
-
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Barcode<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                              <option selected className='text-gray-400 '>--</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-                          </div>
-                        </div>
-
-
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Tax<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                              <option selected className='text-gray-400 '>--</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-
-                      {/* ----------------------------------------- */}
-
-                      <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
-
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Unit<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                              <option selected className='text-gray-400 '>--</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Status<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                              <option selected className='text-gray-400 '>--</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-                          </div>
-                        </div>
-
-
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Purchasable<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                              <option selected className='text-gray-400 '>--</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-                          </div>
-                        </div>
-
-
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Show Stock Out<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                              <option selected className='text-gray-400 '>--</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-
-                      {/* ---------------------------------------------- */}
-
-
-                      <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
-
-                        <div>
-                          <label htmlFor="" className="text-base font-medium text-gray">
-                            {' '}
-                            Refundable<span className='text-success px-1'>*</span>
-                          </label>
-                          <div className="mt-2">
-                            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                              <option selected className='text-gray-400 '>--</option>
-                              <option value="US">United States</option>
-                              <option value="CA">Canada</option>
-                              <option value="FR">France</option>
-                              <option value="DE">Germany</option>
-                            </select>
-                          </div>
-                        </div>
-
-
-                      </div>
-
-                      {/* ------------------------End--------------------------------- */}
-
-
-
-                      {/* ------------Button----------- */}
-                      <div className="p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4 md:w-fit w-full space-y-3 md:space-y-0  me-auto">
-
-                        <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
-                          <FaCircleCheck className=' ' />
-                          <button type="button" >
-                            Save
-                          </button>
-                        </div>
-
-                        <div className="px-3 flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-gray  focus:ring-4 focus:outline-none  rounded-md ">
-                          X
-                          <button type="button" >
-                            Clear
-                          </button>
-                        </div>
-
-
-                      </div>
-                      {/* -----------Button End--------------- */}
                     </div>
-
-
                   </div>
-                </div>
-                </form>     
+                </form>
               }
 
               {/* -----------From End-------------------- */}
