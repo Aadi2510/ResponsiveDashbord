@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-
 import { FaCircleCheck } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
+
 
 const tableData = [
     "Dashboard",
@@ -69,7 +71,24 @@ const EditPermissions = () => {
                     {/* ----------Start---------- */}
 
                     <div className=" bg-white p-5 rounded shadow-md">
-                    <div className=" text-xl">Role & Permissions <span className="text-red-400 w-full ">(Admin)</span><hr className='my-4' /></div>
+
+
+                        <div className="md:flex  w-full justify-between ">
+
+                            <div className=" p-2 text-xl">Role & Permissions <span className="text-red-400 w-full ">(Admin)</span></div>
+
+                            <div className="md:flex md:space-y-0 space-y-2 mx-auto md:mx-0  gap-4 ">
+
+                                <Link to="/admin/settings/" className="px-3 flex justify-around bg-gray text-white rounded-full gap-2 items-center md:py-1.5 py-1 font-larze hover:bg-black focus:ring-4 focus:outline-none  rounded-md ">
+                                    <span className='text-white'>X</span>
+                                </Link>
+
+                            </div>
+
+                        </div>
+                        <hr className='my-4' />
+
+
                         <div className="md:flex ">
 
                             <div className="container mx-auto overflow-x-scroll ">
@@ -123,18 +142,18 @@ const EditPermissions = () => {
                                 </table>
                             </div>
                         </div>
-                            {/* ------------Button----------- */}
-                            <div className="p-3 grid grid-cols-1 md:gap-5  md:w-fit w-full space-y-3 md:space-y-0  me-auto">
+                        {/* ------------Button----------- */}
+                        <div className="p-3 grid grid-cols-1 md:gap-5  md:w-fit w-full space-y-3 md:space-y-0  me-auto">
 
-                                <div className="px-3 w-full flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
-                                    <FaCircleCheck className=' ' />
-                                    <button type="button" >
-                                        Save
-                                    </button>
-                                </div>
-
+                            <div className="px-3 w-full flex justify-around  gap-2 items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
+                                <FaCircleCheck className=' ' />
+                                <button type="button" >
+                                    Save
+                                </button>
                             </div>
-                            {/* -----------Button End--------------- */}
+
+                        </div>
+                        {/* -----------Button End--------------- */}
 
 
                     </div>

@@ -4,7 +4,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 
 
-const EditProductAttributes = () => {
+const AddProductAttributeOptions = () => {
 
 
 
@@ -17,8 +17,8 @@ const EditProductAttributes = () => {
                 <div className="  text-neutral-600 mx-auto text-md antialiased font-normal  p-5   ">
 
                     <div className=" p-2 relative top-5 my-5 mt-5 antialiased">
-                        <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'> Settings / </span>
-                            <span className='text-gray font-semibold'> Product Attributes
+                        <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'>Settings / </span>
+                            <span className='text-gray font-semibold'>  Product Attribute Options
                             </span>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const EditProductAttributes = () => {
 
                                 <div className="md:flex  w-full justify-between ">
 
-                                    <div className="p-2 text-xl font-semibold">Edit</div>
+                                    <div className="p-2 text-xl font-semibold">Create</div>
 
                                     <div className="md:flex md:space-y-0 space-y-2 mx-auto md:mx-0  gap-4 ">
 
@@ -130,4 +130,4 @@ const EditProductAttributes = () => {
     )
 }
 
-export default EditProductAttributes
+export default AddProductAttributeOptions

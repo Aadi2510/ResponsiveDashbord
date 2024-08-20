@@ -54,7 +54,6 @@ import ProductsReport from './pages/ProductsReport.jsx'
 import POSOrders from './pages/POSOrders.jsx'
 import Settings from './pages/Settings/Settings.jsx'
 import ViewPOSOrders from './pages/ViewPOSOrders.jsx'
-import EditPermissions from './pages/Settings/EditPermissions.jsx'
 import AddCountries from './pages/Settings/Countries/AddCountries.jsx'
 import EditCountries from './pages/Settings/Countries/EditCountries.jsx'
 import AddStates from './pages/Settings/States/AddStates.jsx'
@@ -68,6 +67,24 @@ import EditProductCategories from './pages/Settings/ProductCategories/EditProduc
 import ParentCategory from './pages/Settings/ProductCategories/ParentCategory.jsx'
 import AddProductAttributes from './pages/Settings/ProductAttributes/AddProductAttributes.jsx'
 import EditProductAttributes from './pages/Settings/ProductAttributes/EditProductAttributes.jsx'
+import AddProductBrands from './pages/Settings/ProductBrands/AddProductBrands.jsx'
+import EditProductBrands from './pages/Settings/ProductBrands/EditProductBrands.jsx'
+import AddSuppliers from './pages/Settings/Suppliers/AddSuppliers.jsx'
+import EditSuppliers from './pages/Settings/Suppliers/EditSuppliers.jsx'
+import SuppliersCategory from './pages/Settings/Suppliers/SuppliersCategory.jsx'
+import AddUnits from './pages/Settings/Units/AddUnits.jsx'
+import EditUnits from './pages/Settings/Units/EditUnits.jsx'
+import AddTaxes from './pages/Settings/Taxes/AddTaxes.jsx'
+import EditTaxes from './pages/Settings/Taxes/EditTaxes.jsx'
+import EditRolePermissions from './pages/Settings/RolePermissions/EditRolePermissions.jsx'
+import AddRolePermissions from './pages/Settings/RolePermissions/AddRolePermissions.jsx'
+import EditPermissions from './pages/Settings/RolePermissions/EditPermissions.jsx'
+import ViewSuppliers from './pages/Settings/Suppliers/ViewSuppliers.jsx'
+import ViewProductBrands from './pages/Settings/ProductBrands/ViewProductBrands.jsx'
+import ViewProductAttributes from './pages/Settings/ProductAttributes/ViewProductAttributes.jsx'
+import AddProductAttributeOptions from './pages/Settings/ProductAttributes/AddProductAttributeOptions.jsx'
+import EditProductAttributeOptions from './pages/Settings/ProductAttributes/EditProductAttributeOptions.jsx'
+import ViewProductCategories from './pages/Settings/ProductCategories/ViewProductCategories.jsx'
 
 
 
@@ -139,9 +156,26 @@ const router = createBrowserRouter(
         <Route path='/admin/settings/editCurrencies' element={<EditCurrencies/>} />
         <Route path='/admin/settings/addProductCategories' element={<AddProductCategories/>} />
         <Route path='/admin/settings/editProductCategories' element={<EditProductCategories/>} />
+        <Route path='/admin/settings/viewProductCategories' element={<ViewProductCategories/>} />
         <Route path='/admin/settings/parentCategory' element={<ParentCategory/>} />
         <Route path='/admin/settings/addProductAttributes' element={<AddProductAttributes/>} />
+        <Route path='/admin/settings/viewProductAttributes' element={<ViewProductAttributes/>} />
         <Route path='/admin/settings/editProductAttributes' element={<EditProductAttributes/>} />
+        <Route path='/admin/settings/addProductAttributeOptions' element={<AddProductAttributeOptions/>} />
+        <Route path='/admin/settings/editProductAttributeOptions' element={<EditProductAttributeOptions/>} />
+        <Route path='/admin/settings/addProductBrands' element={<AddProductBrands/>} />
+        <Route path='/admin/settings/viewProductBrands' element={<ViewProductBrands/>} />
+        <Route path='/admin/settings/editProductBrands' element={<EditProductBrands/>} />
+        <Route path='/admin/settings/addSuppliers' element={<AddSuppliers/>} />
+        <Route path='/admin/settings/suppliersCategory' element={<SuppliersCategory/>} />
+        <Route path='/admin/settings/editSuppliers' element={<EditSuppliers/>} />
+        <Route path='/admin/settings/viewSuppliers' element={<ViewSuppliers/>} />
+        <Route path='/admin/settings/addUnits' element={<AddUnits/>} />
+        <Route path='/admin/settings/editUnits' element={<EditUnits/>} />
+        <Route path='/admin/settings/addTaxes' element={<AddTaxes/>} />
+        <Route path='/admin/settings/editTaxes' element={<EditTaxes/>} />
+        <Route path='/admin/settings/addRolePermissions' element={<AddRolePermissions/>} />
+        <Route path='/admin/settings/editRolePermissions' element={<EditRolePermissions/>} />
 
 
         

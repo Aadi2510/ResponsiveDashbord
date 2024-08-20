@@ -51,7 +51,7 @@ const RolePermissionsTable = () => {
 
                                                                 <div className="p-3 md:flex gap-3  ms-auto space-y-3 md:space-y-0  ">
 
-                                                                    <Link to="/admin/employees/viewemployees/employeesaddress" className="px-3  flex justify-around md:w-fit  w-full gap-2 ms-auto items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
+                                                                    <Link to="/admin/settings/addRolePermissions" className="px-3  flex justify-around md:w-fit  w-full gap-2 ms-auto items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
                                                                         <CiCirclePlus className='size-5 ' />
                                                                         <button type="submit" >
                                                                             Add Role 
@@ -82,7 +82,7 @@ const RolePermissionsTable = () => {
                                      (1)Members</td>
                                     <td class="px-6 py-4 flex gap-2 justify-center">
                                         <Link to="/admin/settings/permissions"><FaKey  className='text-red-400 pointer' size={20} /></Link>
-                                        <Link to="/admin/administrators/viewadministrators/editAddress"><FaRegEdit className='text-green-400 pointer' size={20} /></Link>
+                                        <Link to="/admin/settings/editRolePermissions"><FaRegEdit className='text-green-400 pointer' size={20} /></Link>
                                         <span><MdOutlineDeleteOutline className='text-red-400 pointer' size={20} /></span>
                                     </td>
                                 </tr>

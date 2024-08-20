@@ -20,7 +20,7 @@ const ParentCategory = () => {
                         <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'>Settings /</span>
                             <span className='text-gray font-semibold'> Product Categories /
                             </span>
-                            <span className='text-gray font-semibold'> ParentCategory
+                            <span className='text-gray font-semibold'> Parent Category
                             </span>
                         </div>
                     </div>

@@ -835,7 +835,7 @@ const Settings = () => {
 
                                                             {/* ----------------------Table------------------------------- */}
 
-<StatesTable/>
+                                                            <StatesTable />
 
                                                             {/* -----------Table End--------------------------- */}
 
@@ -987,7 +987,7 @@ const Settings = () => {
                                                             {/* ----------------------Table------------------------------- */}
 
 
-<CitiesTable/>
+                                                            <CitiesTable />
 
                                                             {/* -----------Table End--------------------------- */}
 
@@ -1018,75 +1018,89 @@ const Settings = () => {
                                 </div>}
                                 {activeTab === 'Currencies' && <div>
                                     {/* Manage different currencies here. */}
-                                    
-<CurrenciesTable/>
 
-                                    </div>}
+                                    <CurrenciesTable />
+
+                                </div>}
                                 {activeTab === 'Product Categories' && <div>
-                                    
+
                                     {/* Product categories information. */}
- <ProductCategoriesTable/>
+                                    <ProductCategoriesTable />
 
-                                    </div>}
+                                </div>}
                                 {activeTab === 'Product Attributes' && <div>
-                                    
-                                    {/* Set product attributes. */}
-                                    <ProductAttributesTable/>
 
-                                    
-                                    </div>}
+                                    {/* Set product attributes. */}
+                                    <ProductAttributesTable />
+
+
+                                </div>}
                                 {activeTab === 'Product Brands' && <div>
-                                    
+
                                     {/* Product brands details. */}
-                                    
-<ProductBrandsTable/>
-                                    
-                                    </div>}
+
+                                    <ProductBrandsTable />
+
+                                </div>}
                                 {activeTab === 'Suppliers' && <div>
                                     {/* Manage your suppliers. */}
-                                    <SuppliersTable/>
-                                    </div>}
+                                    <SuppliersTable />
+                                </div>}
                                 {activeTab === 'Units' && <div>
                                     {/* Unit configuration and settings. */}
-                                    <UnitsTable/>
-                                    </div>}
+                                    <UnitsTable />
+                                </div>}
                                 {activeTab === 'Taxes' && <div>
                                     {/* Tax setup and configuration. */}
-                                    <TaxesTable/>
-                                    </div>}
+                                    <TaxesTable />
+                                </div>}
                                 {activeTab === 'Role & Permissions' && <div>
                                     {/* Manage roles and permissions here. */}
-                                    <RolePermissionsTable/>
-                                    </div>}
-                                {activeTab === 'License' && <div>License details and management.</div>}
+                                    <RolePermissionsTable />
+                                </div>}
+                                {activeTab === 'License' && <div>
+
+                                    {/* License details and management. */}
+
+                                    <div className=" mt-[2rem]  md:mt-0 md:p-2 bg-white rounded-md antialiased ">
+                                        <div className="w-full  text-xl ">License<hr className='my-4' /></div>
+                                        <div className=" ">
+
+                                            <div className=" p-3 grid md:grid-cols-1 w-full sm:grid-cols-1 md:gap-5 mx-auto ">
+
+                                                <div>
+                                                    <label htmlFor="" className="text-base font-medium text-gray">
+                                                        {' '}
+                                                        License Key
+                                                        <span className='text-success px-1'>*</span>
+                                                    </label>
+                                                    <div className="mt-2">
+                                                        <input
+                                                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                                            type="text"
+                                                            value="k8r05ti8-c7b2-41p3-1956-k516m31017k123"
+                                                            readOnly
+                                                        ></input>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+
+
+                                        </div>
+
+                                    </div>
+                                </div>}
                             </div>
                         </div>
 
 
 
 
-                        {/* <div className=" mt-[2rem]  md:mt-0 text-justify md:p-2  rounded-md antialiased ">
 
-                        <div className="grid md:grid-cols-3 gap-3  ">
-
-                            <div className="col-span-1 w-full rounded bg-white p-2 justify-between ">
-
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis laudantium voluptatum, quod dignissimos non provident obcaecati error? Tenetur possimus odit ipsa laudantium eligendi ipsam, molestiae magnam eum praesentium odio necessitatibus!
-
-                            </div>
-
-                            <div className="col-span-2 w-full bg-white p-2 justify-between ">
-
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis laudantium voluptatum, quod dignissimos non provident obcaecati error? Tenetur possimus odit ipsa laudantium eligendi ipsam, molestiae magnam eum praesentium odio necessitatibus!
-
-                            </div>
-
-
-
-
-                        </div>
-
-                    </div> */}
 
                     </div>
                     {/* ----------End---------- */}

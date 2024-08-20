@@ -13,6 +13,8 @@ import { MdOutlineDeleteOutline } from "react-icons/md";
 import { MdFilterListAlt } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa";
 import CountriesTable from './CountriesTable'
+import { GrFormView } from "react-icons/gr";
+
 
 const SuppliersTable = () => {
 
@@ -47,10 +49,17 @@ const SuppliersTable = () => {
 
                                                                 <div className="p-3 md:flex gap-3  ms-auto space-y-3 md:space-y-0  ">
 
-                                                                    <Link to="/admin/employees/viewemployees/employeesaddress" className="px-3  flex justify-around md:w-fit  w-full gap-2 ms-auto items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
+                                                                    <Link to="/admin/settings/addSuppliers" className="px-3  flex justify-around md:w-fit  w-full gap-2 ms-auto items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
                                                                         <CiCirclePlus className='size-5 ' />
                                                                         <button type="submit" >
-                                                                            Add Address
+                                                                            Add Suppliers
+                                                                        </button>
+                                                                    </Link>
+                                                                   
+                                                                    <Link to="/admin/settings/suppliersCategory" className="px-3  flex justify-around md:w-fit  w-full gap-2 ms-auto items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
+                                                                        <CiCirclePlus className='size-5 ' />
+                                                                        <button type="submit" >
+                                                                            Address Category
                                                                         </button>
                                                                     </Link>
 
@@ -98,8 +107,8 @@ const SuppliersTable = () => {
                                     <td className="py-2 px-4 border-b">{row.email}</td>
                                     <td className="py-2 px-4 border-b">{row.phone}</td>
                                     <td class="px-6 py-4 flex gap-2 justify-center">
-                                    <Link to="/admin/administrators/viewadministrators" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
-                                        <Link to="/admin/administrators/viewadministrators/editAddress"><FaRegEdit className='text-green-400 pointer' size={20} /></Link>
+                                    <Link to="/admin/settings/viewSuppliers" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
+                                        <Link to="/admin/settings/editSuppliers"><FaRegEdit className='text-green-400 pointer' size={20} /></Link>
                                         <span><MdOutlineDeleteOutline className='text-red-400 pointer' size={20} /></span>
                                     </td>
                                 </tr>

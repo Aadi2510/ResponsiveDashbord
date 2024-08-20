@@ -5,7 +5,7 @@ import { FaRegEdit } from "react-icons/fa";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { GrFormView } from "react-icons/gr";
 
-const ProductCategoriesTable = () => {
+const ProductBrandsTable = () => {
 
     const data = [
         { id: 1, name: "Name", description	: "A", status: "Active" },
@@ -38,10 +38,10 @@ const ProductCategoriesTable = () => {
 
                                                                 <div className="p-3 md:flex gap-3  ms-auto space-y-3 md:space-y-0  ">
 
-                                                                    <Link to="/admin/employees/viewemployees/employeesaddress" className="px-3  flex justify-around md:w-fit  w-full gap-2 ms-auto items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
+                                                                    <Link to="/admin/settings/addProductBrands" className="px-3  flex justify-around md:w-fit  w-full gap-2 ms-auto items-center py-1.5  font-larze text-white bg-success  focus:ring-4 focus:outline-none  rounded-md ">
                                                                         <CiCirclePlus className='size-5 ' />
                                                                         <button type="submit" >
-                                                                            Add Address
+                                                                        Product Brands
                                                                         </button>
                                                                     </Link>
 
@@ -85,8 +85,8 @@ const ProductCategoriesTable = () => {
                                     <td className="py-2 px-4 border-b">{row.description}</td>
                                     <td className="py-2 px-4 border-b">{row.status}</td>
                                     <td class="px-6 py-4 flex gap-2 justify-center">
-                                    <Link to="/admin/administrators/viewadministrators" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
-                                        <Link to="/admin/administrators/viewadministrators/editAddress"><FaRegEdit className='text-green-400 pointer' size={20} /></Link>
+                                    <Link to="/admin/settings/viewProductBrands" className='text-lightsuccess pointer'><GrFormView size={20}/></Link>
+                                        <Link to="/admin/settings/editProductBrands"><FaRegEdit className='text-green-400 pointer' size={20} /></Link>
                                         <span><MdOutlineDeleteOutline className='text-red-400 pointer' size={20} /></span>
                                     </td>
                                 </tr>
@@ -129,4 +129,4 @@ const ProductCategoriesTable = () => {
   )
 }
 
-export default ProductCategoriesTable
+export default ProductBrandsTable

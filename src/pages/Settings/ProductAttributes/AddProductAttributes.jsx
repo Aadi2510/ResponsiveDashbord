@@ -18,7 +18,7 @@ const AddProductAttributes = () => {
 
                     <div className=" p-2 relative top-5 my-5 mt-5 antialiased">
                         <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'>Settings /</span>
-                            <span className='text-gray font-semibold'>Product Attributes
+                            <span className='text-gray font-semibold'> Product Attributes
                             </span>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ const AddProductAttributes = () => {
                                                 <div>
                                                     <label htmlFor="" className="text-base font-medium text-gray">
                                                         {' '}
-                                                        Parent Category<span className='text-success px-1'>*</span>
+                                                        Name<span className='text-success px-1'>*</span>
                                                     </label>
                                                     <div className="mt-2">
                                                         <input

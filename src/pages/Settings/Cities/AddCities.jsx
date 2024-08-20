@@ -4,7 +4,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 
 
-const AddCountries = () => {
+const AddCities = () => {
 
 
 
@@ -165,4 +165,4 @@ const AddCountries = () => {
     )
 }
 
-export default AddCountries
+export default AddCities

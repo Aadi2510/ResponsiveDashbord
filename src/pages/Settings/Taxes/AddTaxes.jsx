@@ -4,7 +4,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 
 
-const EditProductAttributes = () => {
+const AddTaxes = () => {
 
 
 
@@ -17,8 +17,8 @@ const EditProductAttributes = () => {
                 <div className="  text-neutral-600 mx-auto text-md antialiased font-normal  p-5   ">
 
                     <div className=" p-2 relative top-5 my-5 mt-5 antialiased">
-                        <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'> Settings / </span>
-                            <span className='text-gray font-semibold'> Product Attributes
+                        <div className="text-xl md:py-5 py-3">Dashboard /  <span className='text-gray font-semibold'>Settings /</span>
+                            <span className='text-gray font-semibold'> Taxes
                             </span>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const EditProductAttributes = () => {
 
                                 <div className="md:flex  w-full justify-between ">
 
-                                    <div className="p-2 text-xl font-semibold">Edit</div>
+                                    <div className="p-2 text-xl font-semibold">Create</div>
 
                                     <div className="md:flex md:space-y-0 space-y-2 mx-auto md:mx-0  gap-4 ">
 
@@ -76,7 +76,65 @@ const EditProductAttributes = () => {
                                                 </div>
 
 
+
+                                                <div>
+                                                    <label htmlFor="" className="text-base font-medium text-gray">
+                                                        {' '}
+                                                        Status<span className='text-success px-1'>*</span>
+                                                    </label>
+                                                    <div className="mt-2 flex  justify-between items-center ">
+                                                        <div class="flex w-full items-center  mb-4">
+                                                            <input id="Active" type="radio" value="Active" name="Status" className='accent-success h-4 w-4 ' />
+                                                            <label for="Active" class="ms-2 text-base font-medium text-gray">Active</label>
+                                                        </div>
+                                                        <div class="flex w-full items-center mb-4 ">
+                                                            <input id="Inactive" type="radio" value="Inactive" name="Status" className='accent-success h-4 w-4 ' />
+                                                            <label for="Inactive" class="ms-2 text-base font-medium text-gray">Inactive</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div>
+                                                    <label htmlFor="" className="text-base font-medium text-gray">
+                                                        {' '}
+                                                        Code<span className='text-success px-1'>*</span>
+                                                    </label>
+                                                    <div className="mt-2">
+                                                        <input
+                                                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                                            type="text"
+                                                        ></input>
+                                                    </div>
+                                                </div>
+
+
+
+
                                             </div>
+                                            {/* ------------------------------------------------------------ */}
+                                            <div className=" p-3 grid md:grid-cols-3 sm:grid-cols-1 md:gap-5 mx-auto ">
+
+
+                                                <div>
+                                                    <label htmlFor="" className="text-base font-medium text-gray">
+                                                        {' '}
+                                                        Tax Rate<span className='text-success px-1'>*</span>
+                                                    </label>
+                                                    <div className="mt-2">
+                                                        <input
+                                                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                                            type="text"
+                                                        ></input>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+
+
 
                                             {/* ------------------------End--------------------------------- */}
 
@@ -130,4 +188,4 @@ const EditProductAttributes = () => {
     )
 }
 
-export default EditProductAttributes
+export default AddTaxes
