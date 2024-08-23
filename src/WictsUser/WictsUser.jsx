@@ -29,7 +29,6 @@ const WictsUser = () => {
                                 <div className="px-10  rounded-3xl shadow-xl bg-white p-3">
                                     <div className="mx-auto text-center">
                                         <h1 className="text-4xl text-success text-gray-800">Create License Key</h1>
-                                        <p className="mt-4">How do you want to sign up ?</p>
                                     </div>
                                     <div className="flex items-center my-6">
                                         <hr className="flex-1" />
