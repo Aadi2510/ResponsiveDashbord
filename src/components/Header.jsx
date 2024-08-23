@@ -23,16 +23,12 @@ const Header = () => {
 
         <section>
             <div className=" fixed z-30 top-0 w-5/6 bg-white">
-            <div className=" mx-auto flex max-w-7xl items-center justify-between items-center p-4">
+            <div className=" mx-auto flex max-w-7xl  justify-between items-center p-4">
                 <div className="">
                     <h1 className='text-xs'>Welcome Back!</h1>
                     <p className='text-xl font-semibold'>Anadi</p>
                 </div>
                 <div className="flex items-center space-x-5" >
-                    <div className="hidden md:flex ">
-                        <input type="text"
-                         className='bg-white border px-4 py-2 rounded-lg focus:outline-0 focus-ring-[#f23e14]' placeholder='Search...' />
-                    </div>
                     <div  className="flex items-center space-x-5">
                         <button className='relative text-2xl text-gray-600 '>
                             <GoBell size={32}/>
