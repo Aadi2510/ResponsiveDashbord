@@ -330,7 +330,7 @@ const ViewEmployees = () => {
                 1216
                 </td>
                 <td class="px-6 py-4 flex gap-2 justify-center">
-                    <Link to="/admin/administrators/viewadministrators/editAddress"><FaRegEdit className='text-green-400 pointer' size={20} /></Link>
+                    <Link to="/admin/employees/viewemployees/editemployeesaddress"><FaRegEdit className='text-green-400 pointer' size={20} /></Link>
                     <span><MdOutlineDeleteOutline className='text-red-400 pointer' size={20} /></span>
                 </td>
             </tr>

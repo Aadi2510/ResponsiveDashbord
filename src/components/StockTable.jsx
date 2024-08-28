@@ -9,8 +9,9 @@ import { Link } from 'react-router-dom';
 const dummyProducts = Array.from({ length: 50 }, (_, index) => ({
   id: index + 1,
   name: `Product ${index + 1}`,
-  quantity: `Product ${index + 1}`,
-  status: `Product ${index + 1}`
+  soldquantity: `Product ${index + 1}`,
+  status: `Product ${index + 1}`,
+  remainingquantity: `Product ${index + 1}`
 }));
 
 const ITEMS_PER_PAGE = 10;
@@ -41,16 +42,18 @@ const StockTable = () => {
         <thead className='text-xs  text-white text-gray-700 uppercase bg-gray-300'>
           <tr className=''>
             <th scope="col" class="px-6 py-3" >Name</th>
-            <th scope="col" class="px-6 py-3" >Quantity</th>
+            <th scope="col" class="px-6 py-3" >Sold Quantity</th>
             <th scope="col" class="px-6 py-3" >Status</th>
+            <th scope="col" class="px-6 py-3" >Remaining Quantity</th>
           </tr>
         </thead>
         <tbody className=' '>
           {currentProducts.map((product) => (
             <tr key={product.id} className='bg-white border-b'>
               <td className='px-6 py-4'>{product.name}</td>
-              <td className='px-6 py-4'>{product.quantity}</td>
+              <td className='px-6 py-4'>{product.soldquantity}</td>
               <td className='px-6 py-4'>{product.status}</td>
+              <td className='px-6 py-4'>{product.remainingquantity}</td>
             </tr>
           ))}
         </tbody>

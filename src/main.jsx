@@ -85,10 +85,13 @@ import ViewProductAttributes from './pages/Settings/ProductAttributes/ViewProduc
 import AddProductAttributeOptions from './pages/Settings/ProductAttributes/AddProductAttributeOptions.jsx'
 import EditProductAttributeOptions from './pages/Settings/ProductAttributes/EditProductAttributeOptions.jsx'
 import ViewProductCategories from './pages/Settings/ProductCategories/ViewProductCategories.jsx'
-import SignUp from './pages/Registraction/SignUp.jsx'
 import SignUpFrom from './pages/Registraction/SignUpFrom.jsx'
 import AdminWicts from './WictsUser/AdminWicts.jsx'
 import WictsUser from './WictsUser/WictsUser.jsx'
+import AddPayment from './pages/Purchases/AddPayment.jsx'
+import PurchasePayments from './components/PurchasesTable/PurchasePayments.jsx'
+import EditEmployeesAddress from './pages/EditEmployeesAddress.jsx'
+
 
 
 
@@ -129,6 +132,8 @@ const router = createBrowserRouter(
         <Route path='/admin/purchases/addpurchases' element={<AddPurchases/>} />
         <Route path='/admin/purchases/purchasesCategory' element={<PurchasesCategory/>} />
         <Route path='/admin/purchases/viewpurchases' element={<ViewPurchases/>} />
+        <Route path='/admin/purchases/addPayment' element={<AddPayment/>} />
+        <Route path='/admin/purchases/viewPayment' element={<PurchasePayments/>} />
         <Route path='/admin/purchases/editpurchases' element={<EditPurchases/>} />
         <Route path='/admin/damages' element={<Damages/>} />
         <Route path='/admin/damages/add' element={<AddDamages/>} />
@@ -158,6 +163,7 @@ const router = createBrowserRouter(
         <Route path='/admin/employees/viewemployees' element={<ViewEmployees/>} />
         <Route path='/admin/employees/editemployees' element={<EditEmployees/>} />
         <Route path='/admin/employees/viewemployees/employeesaddress' element={<EmployeesAddress/>} />
+        <Route path='/admin/employees/viewemployees/editemployeesaddress' element={<EditEmployeesAddress/>} />
         <Route path='/admin/employees/viewemployees/employeesaddress/addresscategory' element={<EmpAddCategory/>} />
         <Route path='/admin/salesReport' element={<SalesReport/>} />
         <Route path='/admin/productsReport' element={<ProductsReport/>} />
@@ -196,8 +202,8 @@ const router = createBrowserRouter(
 
         
         <Route path='/admin/settings/permissions' element={<EditPermissions/>} />
-        <Route path='/admin/profile/edit' element={<Cpassword />} />
-        <Route path='/admin/profile/changePassword' element={<Edit />} />
+        <Route path='/admin/profile/edit' element={<Edit/>} />
+        <Route path='/admin/profile/changePassword' element={<Cpassword/>} />
 
       </Route>
 

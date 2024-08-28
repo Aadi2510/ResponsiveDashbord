@@ -63,15 +63,16 @@ const Header = () => {
                         </div> 
 
                      </div> 
-{/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia dolor pariatur architecto beatae maiores provident commodi, veniam nam rem explicabo vitae a voluptatibus fuga reprehenderit eos inventore dolorum ratione. In. */}
+
+
                     <div className=" mt-3">
 
-                        <Link to="/admin/profile/edit" class="px-5 flex w-full  text-[1rem] outline-0   space-x-5  items-center py-2.5  text-sm text-gray-500 ">
+                        <Link to="/admin/profile/edit" onClick={() => setProfileData(false)} class="px-5 flex w-full  text-[1rem] outline-0   space-x-5  items-center py-2.5  text-sm text-gray-500 ">
                             <FaRegPenToSquare className='' />
                             <span>Edit Profile</span>
                         </Link>
 
-                        <Link to="/admin/profile/changePassword" class="px-5 flex w-full border border-[#f5f2eb] border-y-sm text-[1rem]  border-x-0  space-x-5  items-center py-2.5  text-sm text-gray-500   ">
+                        <Link to="/admin/profile/changePassword" onClick={() => setProfileData(false)} class="px-5 flex w-full border border-[#f5f2eb] border-y-sm text-[1rem]  border-x-0  space-x-5  items-center py-2.5  text-sm text-gray-500   ">
                             <LuKeyRound className='' />
                             <span>Change Password</span>
                         </Link>
