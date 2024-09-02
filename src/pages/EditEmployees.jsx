@@ -132,7 +132,7 @@ const EditEmployees = () => {
                                             <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-3  mx-auto ">
 
 
-                                            <div>
+                                                <div>
                                                     <label htmlFor="" className="text-base font-medium text-gray">
                                                         {' '}
                                                         Status<span className='text-success px-1'>*</span>
@@ -163,7 +163,7 @@ const EditEmployees = () => {
                                                         ></input>
                                                     </div>
                                                 </div>
-                                               
+
                                                 <div>
                                                     <label htmlFor="" className="text-base font-medium text-gray">
                                                         {' '}
@@ -181,33 +181,46 @@ const EditEmployees = () => {
                                             </div>
 
 
+                                            <div className="  p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-3  mx-auto ">
+
+
+
+                                                <div>
+                                                    <label htmlFor="" className="text-base font-medium text-gray">
+                                                        {' '}
+                                                        Role<span className='text-success px-1'>*</span>
+                                                    </label>
+                                                    <div className="mt-2">
+                                                        <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                                            <option selected className='text-gray-400 '>--</option>
+                                                            <option value="US">United States</option>
+                                                            <option value="CA">Canada</option>
+                                                            <option value="FR">France</option>
+                                                            <option value="DE">Germany</option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div>
+                                                    <label htmlFor="" className="text-base font-medium text-gray">
+                                                        {' '}
+                                                        Image<span className='text-success px-1'>*</span>
+                                                    </label>
+                                                    <div className="mt-2">
+                                                        <input
+                                                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                                            type="file"
+                                                        ></input>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
                                             {/* ------------------------End--------------------------------- */}
-
-
-                                            <div className=" p-3 grid md:grid-cols-2 md:gap-5 xl:grid-cols-4  mx-auto ">
-
-
-
-<div>
-        <label htmlFor="" className="text-base font-medium text-gray">
-            {' '}
-            Role<span className='text-success px-1'>*</span>
-        </label>
-        <div className="mt-2">
-            <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
-                <option selected className='text-gray-400 '>--</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-            </select>
-
-        </div>
-    </div>
-
-
-
-</div>
 
 
                                             {/* ------------Button----------- */}

@@ -193,10 +193,14 @@ const AddEmployees = () => {
                                                         Role<span className='text-success px-1'>*</span>
                                                     </label>
                                                     <div className="mt-2">
-                                                        <input
-                                                            className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
-                                                            type="text"
-                                                        ></input>
+                                                        <select className="flex h-10 w-full rounded-md border border-gray bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-success focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50">
+                                                            <option selected className='text-gray-400 '>--</option>
+                                                            <option value="US">United States</option>
+                                                            <option value="CA">Canada</option>
+                                                            <option value="FR">France</option>
+                                                            <option value="DE">Germany</option>
+                                                        </select>
+
                                                     </div>
                                                 </div>
 
